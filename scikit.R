@@ -66,6 +66,7 @@ runTraining <- function(file = '/home/wijnand/R_workspace_scikit/resources/train
         
         ### KNN NEAREST NEIGHBORS ###
         print("k-nearest neighbors")
+        library(class)
         predictionKNN <- knn(train = training[,!(names(training) %in% 'outcome')],
                                      test = testing[,!(names(testing) %in% 'outcome')],
                                      cl = training$outcome, 
