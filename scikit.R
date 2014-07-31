@@ -1,5 +1,38 @@
 
-runML <- function(file = '/home/wijnand/R_workspace_scikit/resources/train.csv')
+runTest <- function()
+{
+        # read training data
+        training <- read.csv('/home/wijnand/R_workspace_scikit/resources/train.csv', header = F)
+        outcome <- read.csv('/home/wijnand/R_workspace_scikit/resources/trainLabels.csv', header = F)
+        colnames(outcome) <- 'outcome'
+        outcome$outcome <- factor(outcome$outcome)
+        
+        testing <- read.csv('/home/wijnand/R_workspace_scikit/resources/test.csv', header = F)
+        
+        #predictionKNN <- knn(train = data,
+        #                     test = testing,
+        #                     cl = outcome[,1], 
+        #                     k = 8)
+        
+        library(extraTrees)
+        options( java.parameters = "-Xmx2g" )
+        trainedModel <- extraTrees(training, 
+                                   outcome[,1], 
+                                   mtry = 10,
+                                   ntree = 1000, 
+                                   numRandomCuts = 5, 
+                                   numThreads = 4)
+        predictionET <- predict(trainedModel, testing)
+                
+        solution <- as.data.frame(1:9000)
+        solution <- cbind(solution, predictionET)
+        colnames(solution) <- c("Id", "Solution")
+        
+        write.csv(x = solution, file = '/home/wijnand/R_workspace_scikit/resources/prediction.csv', 
+                  row.names = F, quote = F)
+}
+
+runTraining <- function(file = '/home/wijnand/R_workspace_scikit/resources/train.csv')
 {
         set.seed(1234)
         
@@ -19,7 +52,7 @@ runML <- function(file = '/home/wijnand/R_workspace_scikit/resources/train.csv')
         data <- data[order(runif(nrow(data))),]
         
         library(caret)
-        inTrain <- createDataPartition(data$outcome, p = 0.9, list=F)
+        inTrain <- createDataPartition(data$outcome, p = 0.8, list=F)
         training <- data[inTrain,]
         testing <- data[-inTrain,]
 
@@ -28,27 +61,28 @@ runML <- function(file = '/home/wijnand/R_workspace_scikit/resources/train.csv')
         trainedModel <- train(outcome ~ . , data=training,
                             method="gbm",
                             verbose = F)
-        prediction <- predict(trainedModel, testing)
-        print(confusionMatrix(prediction, testing$outcome)$overall[1])
+        predictionGBM <- predict(trainedModel, testing)
+        print(confusionMatrix(predictionGBM, testing$outcome)$overall[1])
         
         ### KNN NEAREST NEIGHBORS ###
         print("k-nearest neighbors")
-        prediction <- knn(train = training[,!(names(training) %in% 'outcome')],
-                          test = testing[,!(names(testing) %in% 'outcome')], 
-                          cl = training$outcome, 
-                          k = 5)
-        print(confusionMatrix(prediction, testing$outcome)$overall[1])
+        predictionKNN <- knn(train = training[,!(names(training) %in% 'outcome')],
+                                     test = testing[,!(names(testing) %in% 'outcome')],
+                                     cl = training$outcome, 
+                                     k = 8)
+        print(confusionMatrix(predictionKNN, testing$outcome)$overall[1])
+        
         
         ### RANDOM FOREST ###
         print("random forest")
         trainedModel <- train(outcome ~ . , training, 
                               method="rf", 
-                              trControl = trainControl(method = "cv", number = 2),
+                              trControl = trainControl(method = "cv", number = 5),
                               metric = "Accuracy",
                               do.trace=F,
                               ntree=1500)
-        prediction <- predict(trainedModel, testing)
-        print(confusionMatrix(prediction, testing$outcome)$overall[1])
+        predictionRF <- predict(trainedModel, testing)
+        print(confusionMatrix(predictionRF, testing$outcome)$overall[1])
         
         ### EXTREME RANDOMIZED TREES ###
         library(extraTrees)
@@ -60,19 +94,19 @@ runML <- function(file = '/home/wijnand/R_workspace_scikit/resources/train.csv')
                             ntree = 1000, 
                             numRandomCuts = 5, 
                             numThreads = 4)
-        prediction <- predict(trainedModel, testing[,!(names(testing) %in% 'outcome')])
-        print(confusionMatrix(prediction, testing$outcome)$overall[1])
+        predictionET <- predict(trainedModel, testing[,!(names(testing) %in% 'outcome')])
+        print(confusionMatrix(predictionET, testing$outcome)$overall[1])
         
         ### NEURAL NETWORK ###
         print("neural network")
         trainedModel <- train(outcome ~ . , training, 
                               method="nnet", 
-                              trControl = trainControl(method = "cv", number = 2),
+                              trControl = trainControl(method = "cv", number = 5),
                               metric = "Accuracy",
                               maxit = 1500,
                               trace = F)
-        prediction <- predict(trainedModel, testing)
-        print(confusionMatrix(prediction, testing$outcome)$overall[1])
+        predictionNN <- predict(trainedModel, testing)
+        print(confusionMatrix(predictionNN, testing$outcome)$overall[1])
         
         ### SUPPORT VECTOR MACHINES ###
         print("support vector machine")
@@ -81,6 +115,18 @@ runML <- function(file = '/home/wijnand/R_workspace_scikit/resources/train.csv')
                             type='C',
                             kernel='linear',
                             probability = TRUE)
-        prediction <- predict(trainedModel, testing)
-        print(confusionMatrix(prediction, testing$outcome)$overall[1])
+        predictionSVM <- predict(trainedModel, testing)
+        print(confusionMatrix(predictionSVM, testing$outcome)$overall[1])
+        
+        
+        ## combine the best methods
+        print("voting mechanism of best methods")
+        comb <- predictionKNN
+        comb <- cbind(comb, predictionRF)
+        comb <- cbind(comb, predictionET)
+        
+        predictionComb <- rowSums(comb)
+        predictionComb <- ifelse(predictionComb >= 5, 1, 0)
+        predictionComb <- as.factor(predictionComb)
+        print(confusionMatrix(predictionComb, testing$outcome)$overall[1])
 }

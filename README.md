@@ -1,9 +1,12 @@
+---
+output: pdf_document
+---
 ML_Scikit
 =========
 
 MachineLearning competition on kaggle.com, Scikit case
 
-# No preprocessing, set.seed(1234), 90% training data
+#### No preprocessing, set.seed(1234), 90% training data
 
 [1] "generalized boosted model"
 Accuracy 
