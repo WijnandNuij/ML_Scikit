@@ -45,13 +45,15 @@ runTest <- function()
         #prediction <- predict(trainedModel, testing)
                 
         library(caret)
-        grid = expand.grid(.trials = c(80),
-                           .model = c("rules"),
-                           .winnow = c(F)) 
+        #grid = expand.grid(.trials = c(80),
+        #                   .model = c("rules"),
+        #                   .winnow = c(F)) 
         trainedModel <- train(outcome[,1] ~ . , data=training,
-                              method = "C5.0",
-                              tuneGrid = grid)
-        
+                              method = "rf",
+                              #tuneGrid = grid,
+                              metric = "Kappa",
+                              tuneLength = 2)
+        print(trainedModel)
         prediction <- predict(trainedModel, testing)
         
         solution <- as.data.frame(1:9000)
@@ -109,7 +111,7 @@ runTraining <- function(file = '/home/wijnand/R_workspace_scikit/resources/train
         {
                 trainedModel <- train(outcome ~ . , data=training,
                                       method = s,
-                                      tuneLength = 2, 
+                                      tuneLength = 1, 
                                       metric = "Accuracy")
                 predictionSomeModel <- predict(trainedModel, testing)
                 #print(trainedModel)
