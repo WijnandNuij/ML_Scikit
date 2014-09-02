@@ -1,0 +1,59 @@
+Time difference of 2.278746 secs
+[1] "==============="
+Shrinkage Discriminant Analysis 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 720, 720, 719, 720, 720, ... 
+
+Resampling results across tuning parameters:
+
+  lambda  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.0000  0.799     0.597  0.0450       0.0903  
+  0.0909  0.802     0.603  0.0398       0.0799  
+  0.1818  0.803     0.606  0.0365       0.0733  
+  0.2727  0.802     0.605  0.0359       0.0719  
+  0.3636  0.801     0.602  0.0330       0.0662  
+  0.4545  0.802     0.604  0.0331       0.0664  
+  0.5455  0.801     0.601  0.0338       0.0679  
+  0.6364  0.803     0.606  0.0330       0.0663  
+  0.7273  0.802     0.603  0.0386       0.0775  
+  0.8182  0.804     0.607  0.0379       0.0762  
+  0.9091  0.806     0.612  0.0369       0.0742  
+  1.0000  0.803     0.606  0.0394       0.0792  
+
+Tuning parameter 'diagonal' was held constant at a value of FALSE
+Kappa was used to select the optimal model using  the largest value.
+The final values used for the model were diagonal = FALSE and lambda = 0.9090909. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 85 19
+         1 13 83
+                                          
+               Accuracy : 0.84            
+                 95% CI : (0.7817, 0.8879)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.6803          
+ Mcnemar's Test P-Value : 0.3768          
+                                          
+            Sensitivity : 0.8673          
+            Specificity : 0.8137          
+         Pos Pred Value : 0.8173          
+         Neg Pred Value : 0.8646          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4250          
+   Detection Prevalence : 0.5200          
+      Balanced Accuracy : 0.8405          
+                                          
+       'Positive' Class : 0               
+                                          

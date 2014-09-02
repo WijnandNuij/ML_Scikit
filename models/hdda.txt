@@ -1,0 +1,59 @@
+Time difference of 2.03756 secs
+[1] "==============="
+High Dimensional Discriminant Analysis 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 719, 720, 721, 720, 720, 720, ... 
+
+Resampling results across tuning parameters:
+
+  threshold  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.0500     0.794     0.588  0.0449       0.0893  
+  0.0727     0.794     0.588  0.0449       0.0893  
+  0.0955     0.786     0.573  0.0474       0.0944  
+  0.1182     0.799     0.598  0.0394       0.0793  
+  0.1409     0.817     0.634  0.0448       0.0896  
+  0.1636     0.824     0.649  0.0388       0.0776  
+  0.1864     0.833     0.665  0.0432       0.0861  
+  0.2091     0.828     0.657  0.0552       0.1099  
+  0.2318     0.829     0.659  0.0546       0.1088  
+  0.2545     0.832     0.664  0.0557       0.1109  
+  0.2773     0.839     0.679  0.0645       0.1286  
+  0.3000     0.839     0.679  0.0645       0.1286  
+
+Tuning parameter 'model' was held constant at a value of all
+Kappa was used to select the optimal model using  the largest value.
+The final values used for the model were threshold = 0.3 and model = all. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 82 21
+         1 16 81
+                                          
+               Accuracy : 0.815           
+                 95% CI : (0.7541, 0.8663)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.6302          
+ Mcnemar's Test P-Value : 0.5108          
+                                          
+            Sensitivity : 0.8367          
+            Specificity : 0.7941          
+         Pos Pred Value : 0.7961          
+         Neg Pred Value : 0.8351          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4100          
+   Detection Prevalence : 0.5150          
+      Balanced Accuracy : 0.8154          
+                                          
+       'Positive' Class : 0               
+                                          

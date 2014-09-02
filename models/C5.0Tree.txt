@@ -1,0 +1,46 @@
+Time difference of 1.486701 secs
+[1] "==============="
+Single C5.0 Tree 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 721, 720, 720, 720, 719, ... 
+
+Resampling results
+
+  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.767     0.535  0.0366       0.073   
+
+ 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 74 22
+         1 24 80
+                                          
+               Accuracy : 0.77            
+                 95% CI : (0.7054, 0.8264)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : 3.462e-14       
+                                          
+                  Kappa : 0.5396          
+ Mcnemar's Test P-Value : 0.8828          
+                                          
+            Sensitivity : 0.7551          
+            Specificity : 0.7843          
+         Pos Pred Value : 0.7708          
+         Neg Pred Value : 0.7692          
+             Prevalence : 0.4900          
+         Detection Rate : 0.3700          
+   Detection Prevalence : 0.4800          
+      Balanced Accuracy : 0.7697          
+                                          
+       'Positive' Class : 0               
+                                          

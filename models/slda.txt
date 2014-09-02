@@ -1,0 +1,46 @@
+Time difference of 4.405803 secs
+[1] "==============="
+Stabilized Linear Discriminant Analysis 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 719, 720, 719, 720, 720, 720, ... 
+
+Resampling results
+
+  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.797     0.594  0.0458       0.0915  
+
+ 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 73 20
+         1 25 82
+                                          
+               Accuracy : 0.775           
+                 95% CI : (0.7108, 0.8309)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : 1.057e-14       
+                                          
+                  Kappa : 0.5494          
+ Mcnemar's Test P-Value : 0.551           
+                                          
+            Sensitivity : 0.7449          
+            Specificity : 0.8039          
+         Pos Pred Value : 0.7849          
+         Neg Pred Value : 0.7664          
+             Prevalence : 0.4900          
+         Detection Rate : 0.3650          
+   Detection Prevalence : 0.4650          
+      Balanced Accuracy : 0.7744          
+                                          
+       'Positive' Class : 0               
+                                          

@@ -1,0 +1,134 @@
+Time difference of 2.126494 mins
+[1] "==============="
+Cost-Sensitive C5.0 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 719, 720, 720, 719, 720, 721, ... 
+
+Resampling results across tuning parameters:
+
+  model  winnow  cost  trials  Accuracy  Kappa  Accuracy SD  Kappa SD
+  rules  FALSE   1       1     0.783     0.565  0.0434       0.0870  
+  rules  FALSE   1      10     0.857     0.714  0.0250       0.0502  
+  rules  FALSE   1      20     0.870     0.740  0.0315       0.0632  
+  rules  FALSE   1      30     0.876     0.753  0.0365       0.0731  
+  rules  FALSE   1      40     0.876     0.751  0.0284       0.0567  
+  rules  FALSE   1      50     0.879     0.757  0.0256       0.0512  
+  rules  FALSE   1      60     0.879     0.759  0.0287       0.0575  
+  rules  FALSE   1      70     0.883     0.766  0.0316       0.0632  
+  rules  FALSE   1      80     0.884     0.769  0.0317       0.0634  
+  rules  FALSE   1      90     0.881     0.762  0.0323       0.0647  
+  rules  FALSE   1     100     0.883     0.766  0.0290       0.0580  
+  rules  FALSE   2       1     0.724     0.452  0.0467       0.0927  
+  rules  FALSE   2      10     0.855     0.709  0.0397       0.0802  
+  rules  FALSE   2      20     0.856     0.712  0.0421       0.0848  
+  rules  FALSE   2      30     0.862     0.723  0.0439       0.0885  
+  rules  FALSE   2      40     0.862     0.723  0.0391       0.0788  
+  rules  FALSE   2      50     0.862     0.723  0.0422       0.0850  
+  rules  FALSE   2      60     0.861     0.720  0.0386       0.0778  
+  rules  FALSE   2      70     0.861     0.722  0.0440       0.0886  
+  rules  FALSE   2      80     0.858     0.714  0.0436       0.0879  
+  rules  FALSE   2      90     0.859     0.717  0.0390       0.0784  
+  rules  FALSE   2     100     0.861     0.722  0.0400       0.0807  
+  rules   TRUE   1       1     0.795     0.590  0.0425       0.0849  
+  rules   TRUE   1      10     0.850     0.700  0.0416       0.0832  
+  rules   TRUE   1      20     0.859     0.719  0.0456       0.0912  
+  rules   TRUE   1      30     0.859     0.718  0.0493       0.0987  
+  rules   TRUE   1      40     0.871     0.743  0.0412       0.0824  
+  rules   TRUE   1      50     0.870     0.740  0.0427       0.0854  
+  rules   TRUE   1      60     0.874     0.749  0.0412       0.0825  
+  rules   TRUE   1      70     0.870     0.740  0.0423       0.0846  
+  rules   TRUE   1      80     0.874     0.747  0.0462       0.0924  
+  rules   TRUE   1      90     0.874     0.747  0.0446       0.0893  
+  rules   TRUE   1     100     0.875     0.750  0.0478       0.0958  
+  rules   TRUE   2       1     0.741     0.484  0.0519       0.1021  
+  rules   TRUE   2      10     0.831     0.661  0.0443       0.0890  
+  rules   TRUE   2      20     0.841     0.680  0.0406       0.0813  
+  rules   TRUE   2      30     0.838     0.675  0.0450       0.0904  
+  rules   TRUE   2      40     0.833     0.665  0.0410       0.0824  
+  rules   TRUE   2      50     0.837     0.673  0.0437       0.0879  
+  rules   TRUE   2      60     0.837     0.673  0.0437       0.0879  
+  rules   TRUE   2      70     0.841     0.680  0.0399       0.0802  
+  rules   TRUE   2      80     0.840     0.679  0.0408       0.0819  
+  rules   TRUE   2      90     0.837     0.673  0.0394       0.0790  
+  rules   TRUE   2     100     0.834     0.668  0.0385       0.0773  
+  tree   FALSE   1       1     0.757     0.514  0.0468       0.0937  
+  tree   FALSE   1      10     0.844     0.689  0.0344       0.0689  
+  tree   FALSE   1      20     0.865     0.730  0.0292       0.0585  
+  tree   FALSE   1      30     0.871     0.741  0.0331       0.0663  
+  tree   FALSE   1      40     0.874     0.747  0.0374       0.0750  
+  tree   FALSE   1      50     0.874     0.749  0.0314       0.0629  
+  tree   FALSE   1      60     0.874     0.749  0.0300       0.0600  
+  tree   FALSE   1      70     0.877     0.754  0.0305       0.0611  
+  tree   FALSE   1      80     0.878     0.756  0.0317       0.0634  
+  tree   FALSE   1      90     0.881     0.762  0.0331       0.0662  
+  tree   FALSE   1     100     0.879     0.757  0.0311       0.0623  
+  tree   FALSE   2       1     0.755     0.510  0.0493       0.0982  
+  tree   FALSE   2      10     0.845     0.690  0.0459       0.0922  
+  tree   FALSE   2      20     0.876     0.752  0.0349       0.0700  
+  tree   FALSE   2      30     0.876     0.752  0.0356       0.0713  
+  tree   FALSE   2      40     0.879     0.757  0.0353       0.0707  
+  tree   FALSE   2      50     0.874     0.748  0.0343       0.0687  
+  tree   FALSE   2      60     0.875     0.750  0.0339       0.0682  
+  tree   FALSE   2      70     0.875     0.750  0.0340       0.0684  
+  tree   FALSE   2      80     0.874     0.748  0.0320       0.0643  
+  tree   FALSE   2      90     0.879     0.757  0.0313       0.0628  
+  tree   FALSE   2     100     0.873     0.746  0.0329       0.0660  
+  tree    TRUE   1       1     0.776     0.551  0.0445       0.0896  
+  tree    TRUE   1      10     0.846     0.691  0.0404       0.0810  
+  tree    TRUE   1      20     0.861     0.721  0.0367       0.0735  
+  tree    TRUE   1      30     0.863     0.726  0.0383       0.0768  
+  tree    TRUE   1      40     0.864     0.729  0.0417       0.0836  
+  tree    TRUE   1      50     0.865     0.730  0.0422       0.0847  
+  tree    TRUE   1      60     0.863     0.725  0.0435       0.0873  
+  tree    TRUE   1      70     0.866     0.731  0.0400       0.0802  
+  tree    TRUE   1      80     0.865     0.730  0.0422       0.0847  
+  tree    TRUE   1      90     0.862     0.724  0.0430       0.0863  
+  tree    TRUE   1     100     0.863     0.726  0.0437       0.0878  
+  tree    TRUE   2       1     0.771     0.544  0.0323       0.0640  
+  tree    TRUE   2      10     0.838     0.676  0.0373       0.0749  
+  tree    TRUE   2      20     0.841     0.681  0.0440       0.0884  
+  tree    TRUE   2      30     0.846     0.691  0.0509       0.1023  
+  tree    TRUE   2      40     0.849     0.698  0.0460       0.0926  
+  tree    TRUE   2      50     0.856     0.712  0.0457       0.0921  
+  tree    TRUE   2      60     0.854     0.707  0.0445       0.0896  
+  tree    TRUE   2      70     0.854     0.707  0.0459       0.0923  
+  tree    TRUE   2      80     0.858     0.716  0.0467       0.0939  
+  tree    TRUE   2      90     0.856     0.712  0.0457       0.0918  
+  tree    TRUE   2     100     0.858     0.714  0.0448       0.0902  
+
+Kappa was used to select the optimal model using  the largest value.
+The final values used for the model were trials = 80, model = rules, winnow = FALSE and cost = 1. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 92 18
+         1  6 84
+                                          
+               Accuracy : 0.88            
+                 95% CI : (0.8267, 0.9216)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : < 2e-16         
+                                          
+                  Kappa : 0.7605          
+ Mcnemar's Test P-Value : 0.02474         
+                                          
+            Sensitivity : 0.9388          
+            Specificity : 0.8235          
+         Pos Pred Value : 0.8364          
+         Neg Pred Value : 0.9333          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4600          
+   Detection Prevalence : 0.5500          
+      Balanced Accuracy : 0.8812          
+                                          
+       'Positive' Class : 0               
+                                          

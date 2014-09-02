@@ -1,0 +1,46 @@
+Time difference of 1.476075 secs
+[1] "==============="
+Single C5.0 Ruleset 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 721, 720, 719, 720, 720, 720, ... 
+
+Resampling results
+
+  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.782     0.564  0.042        0.0841  
+
+ 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 79 19
+         1 19 83
+                                          
+               Accuracy : 0.81            
+                 95% CI : (0.7487, 0.8619)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.6198          
+ Mcnemar's Test P-Value : 1               
+                                          
+            Sensitivity : 0.8061          
+            Specificity : 0.8137          
+         Pos Pred Value : 0.8061          
+         Neg Pred Value : 0.8137          
+             Prevalence : 0.4900          
+         Detection Rate : 0.3950          
+   Detection Prevalence : 0.4900          
+      Balanced Accuracy : 0.8099          
+                                          
+       'Positive' Class : 0               
+                                          

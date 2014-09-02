@@ -1,0 +1,90 @@
+Time difference of 1.041988 mins
+[1] "==============="
+C5.0 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 721, 720, 719, 720, 720, 720, ... 
+
+Resampling results across tuning parameters:
+
+  model  winnow  trials  Accuracy  Kappa  Accuracy SD  Kappa SD
+  rules  FALSE     1     0.787     0.574  0.0417       0.0835  
+  rules  FALSE    10     0.849     0.698  0.0437       0.0876  
+  rules  FALSE    20     0.869     0.738  0.0363       0.0728  
+  rules  FALSE    30     0.873     0.746  0.0359       0.0721  
+  rules  FALSE    40     0.874     0.749  0.0387       0.0776  
+  rules  FALSE    50     0.871     0.741  0.0371       0.0744  
+  rules  FALSE    60     0.876     0.751  0.0352       0.0704  
+  rules  FALSE    70     0.875     0.750  0.0336       0.0673  
+  rules  FALSE    80     0.874     0.747  0.0314       0.0628  
+  rules  FALSE    90     0.879     0.759  0.0293       0.0589  
+  rules  FALSE   100     0.880     0.760  0.0276       0.0553  
+  rules   TRUE     1     0.782     0.564  0.0300       0.0599  
+  rules   TRUE    10     0.831     0.661  0.0532       0.1064  
+  rules   TRUE    20     0.845     0.690  0.0472       0.0946  
+  rules   TRUE    30     0.850     0.700  0.0436       0.0873  
+  rules   TRUE    40     0.851     0.702  0.0455       0.0912  
+  rules   TRUE    50     0.846     0.691  0.0453       0.0908  
+  rules   TRUE    60     0.849     0.697  0.0485       0.0972  
+  rules   TRUE    70     0.846     0.692  0.0473       0.0947  
+  rules   TRUE    80     0.849     0.697  0.0479       0.0960  
+  rules   TRUE    90     0.848     0.696  0.0484       0.0971  
+  rules   TRUE   100     0.847     0.694  0.0472       0.0946  
+  tree   FALSE     1     0.764     0.528  0.0374       0.0750  
+  tree   FALSE    10     0.844     0.689  0.0394       0.0788  
+  tree   FALSE    20     0.859     0.717  0.0349       0.0701  
+  tree   FALSE    30     0.865     0.730  0.0351       0.0705  
+  tree   FALSE    40     0.866     0.731  0.0375       0.0753  
+  tree   FALSE    50     0.875     0.750  0.0394       0.0789  
+  tree   FALSE    60     0.869     0.738  0.0393       0.0789  
+  tree   FALSE    70     0.871     0.742  0.0368       0.0738  
+  tree   FALSE    80     0.869     0.738  0.0356       0.0712  
+  tree   FALSE    90     0.869     0.738  0.0327       0.0655  
+  tree   FALSE   100     0.871     0.741  0.0343       0.0688  
+  tree    TRUE     1     0.771     0.543  0.0434       0.0865  
+  tree    TRUE    10     0.835     0.670  0.0484       0.0968  
+  tree    TRUE    20     0.835     0.670  0.0463       0.0929  
+  tree    TRUE    30     0.844     0.687  0.0464       0.0929  
+  tree    TRUE    40     0.844     0.687  0.0450       0.0901  
+  tree    TRUE    50     0.844     0.687  0.0499       0.0998  
+  tree    TRUE    60     0.843     0.686  0.0468       0.0937  
+  tree    TRUE    70     0.844     0.687  0.0518       0.1037  
+  tree    TRUE    80     0.844     0.687  0.0467       0.0935  
+  tree    TRUE    90     0.846     0.691  0.0473       0.0947  
+  tree    TRUE   100     0.846     0.691  0.0485       0.0972  
+
+Kappa was used to select the optimal model using  the largest value.
+The final values used for the model were trials = 100, model = rules and winnow = FALSE. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 90 17
+         1  8 85
+                                         
+               Accuracy : 0.875          
+                 95% CI : (0.821, 0.9174)
+    No Information Rate : 0.51           
+    P-Value [Acc > NIR] : <2e-16         
+                                         
+                  Kappa : 0.7503         
+ Mcnemar's Test P-Value : 0.1096         
+                                         
+            Sensitivity : 0.9184         
+            Specificity : 0.8333         
+         Pos Pred Value : 0.8411         
+         Neg Pred Value : 0.9140         
+             Prevalence : 0.4900         
+         Detection Rate : 0.4500         
+   Detection Prevalence : 0.5350         
+      Balanced Accuracy : 0.8759         
+                                         
+       'Positive' Class : 0              
+                                         

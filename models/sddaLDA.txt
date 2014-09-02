@@ -1,0 +1,46 @@
+Time difference of 0.7529383 secs
+[1] "==============="
+Stepwise Diagonal Linear Discriminant Analysis 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 719, 720, 721, 720, 720, 720, ... 
+
+Resampling results
+
+  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.788     0.576  0.0514       0.103   
+
+ 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 90 18
+         1  8 84
+                                          
+               Accuracy : 0.87            
+                 95% CI : (0.8153, 0.9133)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : < 2e-16         
+                                          
+                  Kappa : 0.7404          
+ Mcnemar's Test P-Value : 0.07756         
+                                          
+            Sensitivity : 0.9184          
+            Specificity : 0.8235          
+         Pos Pred Value : 0.8333          
+         Neg Pred Value : 0.9130          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4500          
+   Detection Prevalence : 0.5400          
+      Balanced Accuracy : 0.8709          
+                                          
+       'Positive' Class : 0               
+                                          

@@ -1,0 +1,47 @@
+Time difference of 17.17586 secs
+[1] "==============="
+Least Squares Support Vector Machine with Radial Basis Function Kernel 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 720, 720, 719, 720, 719, ... 
+
+Resampling results
+
+  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.842     0.684  0.0294       0.0587  
+
+Tuning parameter 'sigma' was held constant at a value of 0.01375789
+ 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 82 21
+         1 16 81
+                                          
+               Accuracy : 0.815           
+                 95% CI : (0.7541, 0.8663)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.6302          
+ Mcnemar's Test P-Value : 0.5108          
+                                          
+            Sensitivity : 0.8367          
+            Specificity : 0.7941          
+         Pos Pred Value : 0.7961          
+         Neg Pred Value : 0.8351          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4100          
+   Detection Prevalence : 0.5150          
+      Balanced Accuracy : 0.8154          
+                                          
+       'Positive' Class : 0               
+                                          

@@ -1,0 +1,58 @@
+Time difference of 3.958041 secs
+[1] "==============="
+ROC-Based Classifier 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 720, 719, 720, 720, 720, ... 
+
+Resampling results across tuning parameters:
+
+  xgenes  Accuracy  Kappa  Accuracy SD  Kappa SD
+   2      0.766     0.533  0.0420       0.0838  
+   5      0.749     0.497  0.0546       0.1099  
+   8      0.794     0.586  0.0387       0.0773  
+  12      0.779     0.557  0.0355       0.0709  
+  15      0.749     0.498  0.0333       0.0667  
+  19      0.726     0.452  0.0480       0.0953  
+  22      0.726     0.452  0.0494       0.0988  
+  26      0.708     0.416  0.0386       0.0769  
+  29      0.698     0.394  0.0396       0.0800  
+  33      0.681     0.361  0.0383       0.0774  
+  36      0.689     0.376  0.0283       0.0568  
+  40      0.680     0.359  0.0308       0.0620  
+
+Kappa was used to select the optimal model using  the largest value.
+The final value used for the model was xgenes = 8. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 78 19
+         1 20 83
+                                          
+               Accuracy : 0.805           
+                 95% CI : (0.7432, 0.8575)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.6098          
+ Mcnemar's Test P-Value : 1               
+                                          
+            Sensitivity : 0.7959          
+            Specificity : 0.8137          
+         Pos Pred Value : 0.8041          
+         Neg Pred Value : 0.8058          
+             Prevalence : 0.4900          
+         Detection Rate : 0.3900          
+   Detection Prevalence : 0.4850          
+      Balanced Accuracy : 0.8048          
+                                          
+       'Positive' Class : 0               
+                                          

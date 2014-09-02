@@ -1,0 +1,46 @@
+Time difference of 2.074948 secs
+[1] "==============="
+SIMCA 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 721, 719, 720, 720, 719, ... 
+
+Resampling results
+
+  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.881     0.763  0.033        0.0657  
+
+ 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 94 16
+         1  4 86
+                                          
+               Accuracy : 0.9             
+                 95% CI : (0.8498, 0.9378)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : < 2e-16         
+                                          
+                  Kappa : 0.8004          
+ Mcnemar's Test P-Value : 0.01391         
+                                          
+            Sensitivity : 0.9592          
+            Specificity : 0.8431          
+         Pos Pred Value : 0.8545          
+         Neg Pred Value : 0.9556          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4700          
+   Detection Prevalence : 0.5500          
+      Balanced Accuracy : 0.9012          
+                                          
+       'Positive' Class : 0               
+                                          

@@ -1,0 +1,46 @@
+Time difference of 0.6913726 secs
+[1] "==============="
+Stepwise Diagonal Quadratic Discriminant Analysis 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 719, 720, 720, 721, 720, 720, ... 
+
+Resampling results
+
+  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.785     0.57   0.0568       0.113   
+
+ 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 90 22
+         1  8 80
+                                          
+               Accuracy : 0.85            
+                 95% CI : (0.7928, 0.8965)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : < 2e-16         
+                                          
+                  Kappa : 0.7007          
+ Mcnemar's Test P-Value : 0.01762         
+                                          
+            Sensitivity : 0.9184          
+            Specificity : 0.7843          
+         Pos Pred Value : 0.8036          
+         Neg Pred Value : 0.9091          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4500          
+   Detection Prevalence : 0.5600          
+      Balanced Accuracy : 0.8513          
+                                          
+       'Positive' Class : 0               
+                                          
