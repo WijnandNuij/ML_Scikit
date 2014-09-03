@@ -1,0 +1,58 @@
+Time difference of 4.165457 secs
+[1] "==============="
+Nearest Shrunken Centroids 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 720, 721, 720, 719, 720, ... 
+
+Resampling results across tuning parameters:
+
+  threshold  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.247      0.801     0.601  0.04126      0.0823  
+  0.855      0.802     0.603  0.04034      0.0805  
+  1.462      0.813     0.625  0.03935      0.0786  
+  2.070      0.802     0.603  0.03912      0.0782  
+  2.677      0.792     0.583  0.04201      0.0840  
+  3.284      0.783     0.564  0.04162      0.0832  
+  3.892      0.763     0.525  0.03879      0.0777  
+  4.499      0.751     0.499  0.04111      0.0825  
+  5.107      0.744     0.485  0.03512      0.0704  
+  5.714      0.703     0.400  0.03734      0.0748  
+  6.321      0.564     0.112  0.03214      0.0666  
+  6.929      0.510     0.000  0.00425      0.0000  
+
+Kappa was used to select the optimal model using  the largest value.
+The final value used for the model was threshold = 1.462249. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 82 24
+         1 16 78
+                                          
+               Accuracy : 0.8             
+                 95% CI : (0.7378, 0.8531)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.6005          
+ Mcnemar's Test P-Value : 0.2684          
+                                          
+            Sensitivity : 0.8367          
+            Specificity : 0.7647          
+         Pos Pred Value : 0.7736          
+         Neg Pred Value : 0.8298          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4100          
+   Detection Prevalence : 0.5300          
+      Balanced Accuracy : 0.8007          
+                                          
+       'Positive' Class : 0               
+                                          

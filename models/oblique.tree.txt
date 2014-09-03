@@ -1,0 +1,52 @@
+Time difference of 34.50223 mins
+[1] "==============="
+Oblique Trees 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 720, 720, 720, 720, 720, ... 
+
+Resampling results across tuning parameters:
+
+  oblique.splits  variable.selection   Accuracy  Kappa  Accuracy SD  Kappa SD
+  only            none                 0.796     0.593  0.0600       0.120   
+  only            model.selection.aic  0.805     0.609  0.0602       0.120   
+  on              none                 0.758     0.516  0.0619       0.124   
+  on              model.selection.aic  0.770     0.539  0.0598       0.119   
+  off             none                 0.766     0.531  0.0742       0.150   
+  off             model.selection.aic  0.766     0.531  0.0748       0.151   
+
+Kappa was used to select the optimal model using  the largest value.
+The final values used for the model were oblique.splits = only and variable.selection = model.selection.aic. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 86 25
+         1 12 77
+                                          
+               Accuracy : 0.815           
+                 95% CI : (0.7541, 0.8663)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : < 2e-16         
+                                          
+                  Kappa : 0.6308          
+ Mcnemar's Test P-Value : 0.04852         
+                                          
+            Sensitivity : 0.8776          
+            Specificity : 0.7549          
+         Pos Pred Value : 0.7748          
+         Neg Pred Value : 0.8652          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4300          
+   Detection Prevalence : 0.5550          
+      Balanced Accuracy : 0.8162          
+                                          
+       'Positive' Class : 0               
+                                          

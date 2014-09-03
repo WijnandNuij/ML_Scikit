@@ -1,0 +1,46 @@
+Time difference of 19.96872 secs
+[1] "==============="
+Bayesian Generalized Linear Model 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 721, 720, 721, 720, 720, 720, ... 
+
+Resampling results
+
+  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.816     0.632  0.0405       0.081   
+
+ 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 80 22
+         1 18 80
+                                          
+               Accuracy : 0.8             
+                 95% CI : (0.7378, 0.8531)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.6002          
+ Mcnemar's Test P-Value : 0.6353          
+                                          
+            Sensitivity : 0.8163          
+            Specificity : 0.7843          
+         Pos Pred Value : 0.7843          
+         Neg Pred Value : 0.8163          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4000          
+   Detection Prevalence : 0.5100          
+      Balanced Accuracy : 0.8003          
+                                          
+       'Positive' Class : 0               
+                                          

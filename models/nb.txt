@@ -1,0 +1,49 @@
+Time difference of 4.465058 secs
+[1] "==============="
+Naive Bayes 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 721, 720, 720, 720, 721, 719, ... 
+
+Resampling results across tuning parameters:
+
+  usekernel  Accuracy  Kappa  Accuracy SD  Kappa SD
+  FALSE      0.813     0.625  0.0384       0.0767  
+   TRUE      0.804     0.609  0.0380       0.0761  
+
+Tuning parameter 'fL' was held constant at a value of 0
+Kappa was used to select the optimal model using  the largest value.
+The final values used for the model were fL = 0 and usekernel = FALSE. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 86 25
+         1 12 77
+                                          
+               Accuracy : 0.815           
+                 95% CI : (0.7541, 0.8663)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : < 2e-16         
+                                          
+                  Kappa : 0.6308          
+ Mcnemar's Test P-Value : 0.04852         
+                                          
+            Sensitivity : 0.8776          
+            Specificity : 0.7549          
+         Pos Pred Value : 0.7748          
+         Neg Pred Value : 0.8652          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4300          
+   Detection Prevalence : 0.5550          
+      Balanced Accuracy : 0.8162          
+                                          
+       'Positive' Class : 0               
+                                          

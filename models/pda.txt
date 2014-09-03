@@ -1,0 +1,58 @@
+Time difference of 2.467321 secs
+[1] "==============="
+Penalized Discriminant Analysis 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 720, 720, 719, 719, 720, ... 
+
+Resampling results across tuning parameters:
+
+  lambda  Accuracy  Kappa  Accuracy SD  Kappa SD
+   1      0.814     0.628  0.0621       0.124   
+   2      0.814     0.628  0.0621       0.124   
+   3      0.814     0.628  0.0621       0.124   
+   4      0.814     0.628  0.0621       0.124   
+   5      0.814     0.628  0.0621       0.124   
+   6      0.814     0.628  0.0621       0.124   
+   7      0.814     0.628  0.0621       0.124   
+   8      0.815     0.630  0.0616       0.123   
+   9      0.816     0.632  0.0628       0.126   
+  10      0.817     0.633  0.0626       0.125   
+  11      0.817     0.633  0.0626       0.125   
+  12      0.817     0.633  0.0626       0.125   
+
+Kappa was used to select the optimal model using  the largest value.
+The final value used for the model was lambda = 10. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 85 22
+         1 13 80
+                                         
+               Accuracy : 0.825          
+                 95% CI : (0.7651, 0.875)
+    No Information Rate : 0.51           
+    P-Value [Acc > NIR] : <2e-16         
+                                         
+                  Kappa : 0.6505         
+ Mcnemar's Test P-Value : 0.1763         
+                                         
+            Sensitivity : 0.8673         
+            Specificity : 0.7843         
+         Pos Pred Value : 0.7944         
+         Neg Pred Value : 0.8602         
+             Prevalence : 0.4900         
+         Detection Rate : 0.4250         
+   Detection Prevalence : 0.5350         
+      Balanced Accuracy : 0.8258         
+                                         
+       'Positive' Class : 0              
+                                         

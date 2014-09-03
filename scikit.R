@@ -17,32 +17,6 @@ runTest <- function()
         
         testing <- predict(preProcess(training, method="center"), newdata = testing)
         testing <- predict(preProcess(training, method="scale"), newdata = testing)
-        
-        ### SUPPORT VECTOR MACHINES with Radial Basis Function Kernel ###
-        #print("svm rbf");library(kernlab);library(caret)
-        #trainedModel <- train(outcome[,1] ~ . , training, 
-        #                      method="svmRadial", 
-        #                      #trControl = trainControl(method = "cv", number = 5),
-        #                      trControl = trainControl(method = "LOOCV"),
-        #                      tuneGrid = data.frame(.C = c(.25, .5, 1), .sigma = .05),
-        #                      metric = "Accuracy",
-        #                      tuneLength = 32)
-        #prediction <- predict(trainedModel, testing)
-        
-        #prediction <- knn(train = data,
-        #                     test = testing,
-        #                     cl = outcome[,1], 
-        #                     k = 8)
-        
-        #library(extraTrees)
-        #options( java.parameters = "-Xmx2g" )
-        #trainedModel <- extraTrees(training, 
-        #                           outcome[,1], 
-        #                           mtry = 10,
-        #                           ntree = 1000, 
-        #                           numRandomCuts = 5, 
-        #                           numThreads = 4)
-        #prediction <- predict(trainedModel, testing)
                 
         library(caret)
         #grid = expand.grid(.trials = c(80),

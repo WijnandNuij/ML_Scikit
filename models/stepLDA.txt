@@ -1,0 +1,48 @@
+Time difference of 49.89434 secs
+[1] "==============="
+Linear Discriminant Analysis with Stepwise Feature Selection 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 721, 720, 720, 720, 720, 720, ... 
+
+Resampling results
+
+  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.765     0.53   0.049        0.098   
+
+Tuning parameter 'maxvar' was held constant at a value of Inf
+Tuning parameter 'direction' was held constant at a value of both
+ 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 77 25
+         1 21 77
+                                          
+               Accuracy : 0.77            
+                 95% CI : (0.7054, 0.8264)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : 3.462e-14       
+                                          
+                  Kappa : 0.5402          
+ Mcnemar's Test P-Value : 0.6583          
+                                          
+            Sensitivity : 0.7857          
+            Specificity : 0.7549          
+         Pos Pred Value : 0.7549          
+         Neg Pred Value : 0.7857          
+             Prevalence : 0.4900          
+         Detection Rate : 0.3850          
+   Detection Prevalence : 0.5100          
+      Balanced Accuracy : 0.7703          
+                                          
+       'Positive' Class : 0               
+                                          

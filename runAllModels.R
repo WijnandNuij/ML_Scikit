@@ -36,21 +36,35 @@ runAllModels <- function(baseDir = '/home/wijnand/R_workspace_scikit')
         library(doSNOW);
         registerDoSNOW(makeCluster(4, outfile=""))
         
+        # CLASSIFICATION ONLY
         name <- c("hdda", "JRip", "lda", "lda2", "J48", "LMT", "LogitBoost", "lssvmRadial", "lvq",  
                   "rda", "rFerns", "rocc", "rpartCost", "rrlda", "RSimca", "sda",  
-                  "slda", "sparseLDA", "stepLDA", "stepQDA", "svmRadialWeights", "vbmpRadial",
+                  "slda", "sparseLDA", "stepLDA", "stepQDA", "svmRadialWeights",
                   "ada", "bagFDA", "C5.0", "C5.0Cost", "C5.0Rules", "C5.0Tree", "CSimca", "gpls", "hda", 
-                  "Mlda", "multinom", "nb", "oblique.tree", "OneR", "ORFlog", "ORFpls", "ORFridge", "ORFsvm", 
-                  "pam", "PART", "pda", "pda2", "PenalizedLDA", "plr", "protoclass", "qda", "QdaCov", "rbf", 
-                  "FH.GBML", "FRBCS.CHI", "FRBCS.W", "GFS.GCCL", 
+                  "multinom", "nb", "oblique.tree", "OneR", "pam", "PART", "pda", "pda2", "PenalizedLDA", 
+                  "plr", "protoclass")
+        
+        ## NOT WORKING
+        
+        # "FH.GBML", "FRBCS.CHI", "FRBCS.W", "GFS.GCCL",
+        # "Linda", "lssvmLinear", "lssvmPoly", "mda", "sddaLDA", 
+        # "sddaQDA",  "SLAVE", "smda", "vbmpRadial","Mlda",
+        # "ORFlog", "ORFpls", "ORFridge", "ORFsvm", "qda", "QdaCov", "fda", "RDlda", "rbf")
+        
+        
+        # CLASSIFICATION & REGRESSION MODELS
+        
+        name <- c("avNNet", "bayesglm", "bdk", "blackboost", "Boruta", "bstLs", 
+                  "bstSm", "bstTree", "cforest", "ctree", "ctree2", "dnn", "earth", "elm", "evtree", 
+                  "extraTrees", "gam", "gamboost", "gamLoess", "gamSpline", "gaussprLinear", "gaussprPoly", 
+                  "gaussprRadial", "gbm", "gcvEarth", "glm", "glmboost", "glmnet", "glmStepAIC", "kernelpls", 
+                  "kknn", "knn", "logicBag", "logreg", "mlp", "mlpWeightDecay", "nnet", "nodeHarvest", "parRF", 
+                  "partDSA", "pcaNNet", "pls", "plsRglm", "rbfDDA", "rf", "rknn", "rknnBel", "rpart", "rpart2", 
+                  "RRF", "RRFglobal", "simpls", "spls", "svmBoundrangeString", "svmExpoString", "svmLinear", "svmPoly", 
+                  "svmRadial", "svmRadialCost", "svmSpectrumString", "treebag", "widekernelpls", "xyf"
                   
-                  "Linda", "lssvmLinear", "lssvmPoly", "mda", "sddaLDA", "sddaQDA",  "SLAVE", "smda")
+                  , "bag", "bagEarth")
         
-        # fda really slow
-        # RDlda not available
-        # Linda, lssvmLinear, lssvmPoly, mda
-        
-        #name <- c("C5.0", "C5.0Cost")
         
         ctrl = trainControl(method = "repeatedcv", 
                             number = 10, 

@@ -1,0 +1,58 @@
+Time difference of 7.063979 secs
+[1] "==============="
+Penalized Multinomial Regression 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 720, 720, 721, 720, 720, ... 
+
+Resampling results across tuning parameters:
+
+  decay     Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.000000  0.808     0.616  0.0471       0.094   
+  0.000100  0.808     0.616  0.0471       0.094   
+  0.000200  0.808     0.616  0.0471       0.094   
+  0.000398  0.808     0.616  0.0471       0.094   
+  0.000794  0.808     0.616  0.0471       0.094   
+  0.001585  0.808     0.616  0.0471       0.094   
+  0.003162  0.808     0.616  0.0471       0.094   
+  0.006310  0.808     0.616  0.0471       0.094   
+  0.012589  0.808     0.616  0.0471       0.094   
+  0.025119  0.808     0.616  0.0471       0.094   
+  0.050119  0.809     0.617  0.0471       0.094   
+  0.100000  0.809     0.617  0.0471       0.094   
+
+Kappa was used to select the optimal model using  the largest value.
+The final value used for the model was decay = 0.1. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 85 22
+         1 13 80
+                                         
+               Accuracy : 0.825          
+                 95% CI : (0.7651, 0.875)
+    No Information Rate : 0.51           
+    P-Value [Acc > NIR] : <2e-16         
+                                         
+                  Kappa : 0.6505         
+ Mcnemar's Test P-Value : 0.1763         
+                                         
+            Sensitivity : 0.8673         
+            Specificity : 0.7843         
+         Pos Pred Value : 0.7944         
+         Neg Pred Value : 0.8602         
+             Prevalence : 0.4900         
+         Detection Rate : 0.4250         
+   Detection Prevalence : 0.5350         
+      Balanced Accuracy : 0.8258         
+                                         
+       'Positive' Class : 0              
+                                         

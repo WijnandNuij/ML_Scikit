@@ -1,0 +1,59 @@
+Time difference of 2.232802 secs
+[1] "==============="
+Penalized Linear Discriminant Analysis 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 719, 720, 719, 720, 720, 720, ... 
+
+Resampling results across tuning parameters:
+
+  lambda    Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.000100  0.801     0.602  0.0439       0.0878  
+  0.000187  0.801     0.602  0.0439       0.0878  
+  0.000351  0.801     0.602  0.0439       0.0878  
+  0.000658  0.802     0.603  0.0441       0.0883  
+  0.001233  0.802     0.603  0.0441       0.0883  
+  0.002310  0.802     0.603  0.0441       0.0883  
+  0.004329  0.802     0.603  0.0441       0.0883  
+  0.008111  0.802     0.605  0.0438       0.0876  
+  0.015199  0.803     0.606  0.0430       0.0861  
+  0.028480  0.802     0.605  0.0431       0.0863  
+  0.053367  0.802     0.605  0.0434       0.0869  
+  0.100000  0.802     0.603  0.0467       0.0934  
+
+Tuning parameter 'K' was held constant at a value of 1
+Kappa was used to select the optimal model using  the largest value.
+The final values used for the model were lambda = 0.01519911 and K = 1. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 83 23
+         1 15 79
+                                          
+               Accuracy : 0.81            
+                 95% CI : (0.7487, 0.8619)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.6205          
+ Mcnemar's Test P-Value : 0.2561          
+                                          
+            Sensitivity : 0.8469          
+            Specificity : 0.7745          
+         Pos Pred Value : 0.7830          
+         Neg Pred Value : 0.8404          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4150          
+   Detection Prevalence : 0.5300          
+      Balanced Accuracy : 0.8107          
+                                          
+       'Positive' Class : 0               
+                                          

@@ -1,0 +1,59 @@
+Time difference of 1.867092 secs
+[1] "==============="
+Penalized Logistic Regression 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 721, 720, 720, 720, 720, 720, ... 
+
+Resampling results across tuning parameters:
+
+  lambda    Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.000000    NaN       NaN      NA           NA  
+  0.000100  0.817     0.633  0.0313       0.0628  
+  0.000200  0.817     0.633  0.0313       0.0628  
+  0.000398  0.817     0.633  0.0313       0.0628  
+  0.000794  0.817     0.633  0.0313       0.0628  
+  0.001585  0.817     0.633  0.0313       0.0628  
+  0.003162  0.817     0.633  0.0313       0.0628  
+  0.006310  0.817     0.633  0.0313       0.0628  
+  0.012589  0.817     0.633  0.0313       0.0628  
+  0.025119  0.817     0.633  0.0313       0.0628  
+  0.050119  0.817     0.635  0.0322       0.0645  
+  0.100000  0.817     0.635  0.0322       0.0645  
+
+Tuning parameter 'cp' was held constant at a value of bic
+Kappa was used to select the optimal model using  the largest value.
+The final values used for the model were lambda = 0.1 and cp = bic. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 83 24
+         1 15 78
+                                          
+               Accuracy : 0.805           
+                 95% CI : (0.7432, 0.8575)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.6105          
+ Mcnemar's Test P-Value : 0.2002          
+                                          
+            Sensitivity : 0.8469          
+            Specificity : 0.7647          
+         Pos Pred Value : 0.7757          
+         Neg Pred Value : 0.8387          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4150          
+   Detection Prevalence : 0.5350          
+      Balanced Accuracy : 0.8058          
+                                          
+       'Positive' Class : 0               
+                                          

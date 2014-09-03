@@ -1,0 +1,59 @@
+Time difference of 37.81467 secs
+[1] "==============="
+Greedy Prototype Selection 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 721, 719, 721, 720, 720, 720, ... 
+
+Resampling results across tuning parameters:
+
+  eps  Accuracy  Kappa  Accuracy SD  Kappa SD
+   1   0.761     0.520  0.0345       0.0693  
+   2   0.761     0.520  0.0345       0.0693  
+   3   0.761     0.520  0.0345       0.0693  
+   4   0.761     0.520  0.0345       0.0693  
+   5   0.774     0.548  0.0332       0.0665  
+   6   0.774     0.548  0.0476       0.0956  
+   7   0.787     0.572  0.0440       0.0885  
+   8   0.748     0.493  0.0478       0.0963  
+   9   0.719     0.437  0.0453       0.0909  
+  10   0.714     0.430  0.0417       0.0838  
+  11   0.670     0.335  0.0475       0.0965  
+  12   0.630     0.260  0.0624       0.1240  
+
+Tuning parameter 'Minkowski' was held constant at a value of 2
+Kappa was used to select the optimal model using  the largest value.
+The final values used for the model were eps = 7 and Minkowski = 2. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 73 21
+         1 25 81
+                                          
+               Accuracy : 0.77            
+                 95% CI : (0.7054, 0.8264)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : 3.462e-14       
+                                          
+                  Kappa : 0.5394          
+ Mcnemar's Test P-Value : 0.6583          
+                                          
+            Sensitivity : 0.7449          
+            Specificity : 0.7941          
+         Pos Pred Value : 0.7766          
+         Neg Pred Value : 0.7642          
+             Prevalence : 0.4900          
+         Detection Rate : 0.3650          
+   Detection Prevalence : 0.4700          
+      Balanced Accuracy : 0.7695          
+                                          
+       'Positive' Class : 0               
+                                          

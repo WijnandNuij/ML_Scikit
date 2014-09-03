@@ -1,0 +1,48 @@
+Time difference of 3.235636 secs
+[1] "==============="
+Rule-Based Classifier 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 719, 719, 720, 720, 720, 720, ... 
+
+Resampling results
+
+  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.785     0.57   0.0581       0.117   
+
+Tuning parameter 'threshold' was held constant at a value of 0.25
+Tuning parameter 'pruned' was held constant at a value of yes
+ 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 82 25
+         1 16 77
+                                          
+               Accuracy : 0.795           
+                 95% CI : (0.7323, 0.8487)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.5906          
+ Mcnemar's Test P-Value : 0.2115          
+                                          
+            Sensitivity : 0.8367          
+            Specificity : 0.7549          
+         Pos Pred Value : 0.7664          
+         Neg Pred Value : 0.8280          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4100          
+   Detection Prevalence : 0.5350          
+      Balanced Accuracy : 0.7958          
+                                          
+       'Positive' Class : 0               
+                                          

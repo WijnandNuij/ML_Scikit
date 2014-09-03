@@ -1,0 +1,58 @@
+Time difference of 2.421035 secs
+[1] "==============="
+Penalized Discriminant Analysis 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 719, 721, 720, 720, 720, ... 
+
+Resampling results across tuning parameters:
+
+  df  Accuracy  Kappa  Accuracy SD  Kappa SD
+   2  0.796     0.591  0.0373       0.0752  
+   4  0.808     0.616  0.0385       0.0774  
+   6  0.812     0.624  0.0381       0.0765  
+   8  0.814     0.627  0.0396       0.0794  
+  10  0.816     0.631  0.0374       0.0751  
+  12  0.815     0.629  0.0376       0.0753  
+  14  0.816     0.631  0.0383       0.0768  
+  16  0.815     0.629  0.0406       0.0815  
+  18  0.816     0.632  0.0423       0.0848  
+  20  0.819     0.637  0.0408       0.0819  
+  22  0.820     0.640  0.0398       0.0798  
+  24  0.819     0.637  0.0398       0.0799  
+
+Kappa was used to select the optimal model using  the largest value.
+The final value used for the model was df = 22. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 84 23
+         1 14 79
+                                          
+               Accuracy : 0.815           
+                 95% CI : (0.7541, 0.8663)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.6305          
+ Mcnemar's Test P-Value : 0.1884          
+                                          
+            Sensitivity : 0.8571          
+            Specificity : 0.7745          
+         Pos Pred Value : 0.7850          
+         Neg Pred Value : 0.8495          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4200          
+   Detection Prevalence : 0.5350          
+      Balanced Accuracy : 0.8158          
+                                          
+       'Positive' Class : 0               
+                                          

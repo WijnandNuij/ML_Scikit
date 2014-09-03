@@ -1,0 +1,48 @@
+Time difference of 46.15603 secs
+[1] "==============="
+Quadratic Discriminant Analysis with Stepwise Feature Selection 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 721, 719, 720, 720, 720, 720, ... 
+
+Resampling results
+
+  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.738     0.475  0.0425       0.0852  
+
+Tuning parameter 'maxvar' was held constant at a value of Inf
+Tuning parameter 'direction' was held constant at a value of both
+ 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 76 25
+         1 22 77
+                                       
+               Accuracy : 0.765        
+                 95% CI : (0.7, 0.8219)
+    No Information Rate : 0.51         
+    P-Value [Acc > NIR] : 1.104e-13    
+                                       
+                  Kappa : 0.5301       
+ Mcnemar's Test P-Value : 0.7705       
+                                       
+            Sensitivity : 0.7755       
+            Specificity : 0.7549       
+         Pos Pred Value : 0.7525       
+         Neg Pred Value : 0.7778       
+             Prevalence : 0.4900       
+         Detection Rate : 0.3800       
+   Detection Prevalence : 0.5050       
+      Balanced Accuracy : 0.7652       
+                                       
+       'Positive' Class : 0            
+                                       
