@@ -54,7 +54,7 @@ runAllModels <- function(baseDir = '/home/wijnand/R_workspace_scikit')
     
     # CLASSIFICATION & REGRESSION MODELS
     
-    name <- c("avNNet", "bayesglm", "bdk", "blackboost", "Boruta", "bstLs", 
+    name <- c(name, "avNNet", "bayesglm", "bdk", "blackboost", "Boruta", "bstLs", 
               "bstSm", "bstTree", "cforest", "ctree", "ctree2", "earth", "elm", "evtree", 
               "extraTrees", "gam", "gamboost", "gamLoess", "gamSpline", "gaussprLinear", "gaussprPoly", 
               "gaussprRadial", "gbm", "gcvEarth", "glm", "glmboost", "glmnet", "glmStepAIC", "kernelpls", 
