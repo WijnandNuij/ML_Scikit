@@ -1,0 +1,58 @@
+Time difference of 13.26179 secs
+[1] "==============="
+Conditional Inference Tree 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 720, 721, 721, 720, 720, ... 
+
+Resampling results across tuning parameters:
+
+  maxdepth  Accuracy  Kappa  Accuracy SD  Kappa SD
+   1        0.681     0.358  0.0400       0.0789  
+   2        0.728     0.457  0.0558       0.1115  
+   3        0.749     0.497  0.0460       0.0922  
+   4        0.766     0.533  0.0489       0.0968  
+   5        0.782     0.565  0.0605       0.1210  
+   6        0.789     0.579  0.0607       0.1212  
+   7        0.784     0.569  0.0593       0.1185  
+   8        0.782     0.564  0.0572       0.1142  
+   9        0.784     0.567  0.0546       0.1092  
+  10        0.784     0.567  0.0546       0.1092  
+  11        0.784     0.567  0.0546       0.1092  
+  12        0.784     0.567  0.0546       0.1092  
+
+Kappa was used to select the optimal model using  the largest value.
+The final value used for the model was maxdepth = 6. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 88 20
+         1 10 82
+                                          
+               Accuracy : 0.85            
+                 95% CI : (0.7928, 0.8965)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.7005          
+ Mcnemar's Test P-Value : 0.1003          
+                                          
+            Sensitivity : 0.8980          
+            Specificity : 0.8039          
+         Pos Pred Value : 0.8148          
+         Neg Pred Value : 0.8913          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4400          
+   Detection Prevalence : 0.5400          
+      Balanced Accuracy : 0.8509          
+                                          
+       'Positive' Class : 0               
+                                          

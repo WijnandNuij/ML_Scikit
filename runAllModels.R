@@ -55,7 +55,7 @@ runAllModels <- function(baseDir = '/home/wijnand/R_workspace_scikit')
         # CLASSIFICATION & REGRESSION MODELS
         
         name <- c("avNNet", "bayesglm", "bdk", "blackboost", "Boruta", "bstLs", 
-                  "bstSm", "bstTree", "cforest", "ctree", "ctree2", "dnn", "earth", "elm", "evtree", 
+                  "bstSm", "bstTree", "cforest", "ctree", "ctree2", "earth", "elm", "evtree", 
                   "extraTrees", "gam", "gamboost", "gamLoess", "gamSpline", "gaussprLinear", "gaussprPoly", 
                   "gaussprRadial", "gbm", "gcvEarth", "glm", "glmboost", "glmnet", "glmStepAIC", "kernelpls", 
                   "kknn", "knn", "logicBag", "logreg", "mlp", "mlpWeightDecay", "nnet", "nodeHarvest", "parRF", 
@@ -63,12 +63,15 @@ runAllModels <- function(baseDir = '/home/wijnand/R_workspace_scikit')
                   "RRF", "RRFglobal", "simpls", "spls", "svmBoundrangeString", "svmExpoString", "svmLinear", "svmPoly", 
                   "svmRadial", "svmRadialCost", "svmSpectrumString", "treebag", "widekernelpls", "xyf"
                   
-                  , "bag", "bagEarth")
+                  , "bag", "bagEarth", "dnn")
         
         
         ctrl = trainControl(method = "repeatedcv", 
                             number = 10, 
-                            repeats = 2)
+                            repeats = 2,                            
+                            verboseIter = T,
+                            allowParallel = T,
+                            classProbs = T)
         
         
         for(s in name)

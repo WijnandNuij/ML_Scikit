@@ -1,0 +1,59 @@
+Time difference of 43.98138 secs
+[1] "==============="
+Boosted Linear Model 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 720, 720, 720, 719, 720, ... 
+
+Resampling results across tuning parameters:
+
+  mstop  Accuracy  Kappa  Accuracy SD  Kappa SD
+   50    0.786     0.572  0.0327       0.0653  
+  100    0.809     0.618  0.0396       0.0792  
+  150    0.813     0.625  0.0383       0.0768  
+  200    0.814     0.627  0.0349       0.0698  
+  250    0.815     0.630  0.0327       0.0655  
+  300    0.814     0.629  0.0356       0.0713  
+  350    0.817     0.634  0.0361       0.0724  
+  400    0.817     0.634  0.0349       0.0700  
+  450    0.818     0.635  0.0358       0.0719  
+  500    0.819     0.638  0.0359       0.0719  
+  550    0.821     0.643  0.0355       0.0713  
+  600    0.822     0.644  0.0333       0.0669  
+
+Tuning parameter 'nu' was held constant at a value of 0.1
+Kappa was used to select the optimal model using  the largest value.
+The final values used for the model were mstop = 600 and nu = 0.1. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 79 17
+         1 19 85
+                                          
+               Accuracy : 0.82            
+                 95% CI : (0.7596, 0.8706)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.6397          
+ Mcnemar's Test P-Value : 0.8676          
+                                          
+            Sensitivity : 0.8061          
+            Specificity : 0.8333          
+         Pos Pred Value : 0.8229          
+         Neg Pred Value : 0.8173          
+             Prevalence : 0.4900          
+         Detection Rate : 0.3950          
+   Detection Prevalence : 0.4800          
+      Balanced Accuracy : 0.8197          
+                                          
+       'Positive' Class : 0               
+                                          

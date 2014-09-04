@@ -1,0 +1,58 @@
+Time difference of 2.427847 mins
+[1] "==============="
+Conditional Inference Random Forest 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 720, 720, 721, 720, 720, ... 
+
+Resampling results across tuning parameters:
+
+  mtry  Accuracy  Kappa  Accuracy SD  Kappa SD
+   2    0.806     0.610  0.0526       0.1056  
+   4    0.826     0.651  0.0469       0.0939  
+   6    0.840     0.680  0.0470       0.0943  
+   8    0.850     0.700  0.0468       0.0937  
+  10    0.848     0.696  0.0458       0.0918  
+  12    0.848     0.696  0.0454       0.0908  
+  14    0.846     0.691  0.0428       0.0858  
+  16    0.847     0.694  0.0458       0.0918  
+  18    0.847     0.694  0.0465       0.0931  
+  20    0.848     0.695  0.0453       0.0906  
+  22    0.845     0.690  0.0458       0.0918  
+  24    0.843     0.686  0.0436       0.0874  
+
+Kappa was used to select the optimal model using  the largest value.
+The final value used for the model was mtry = 8. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 83 16
+         1 15 86
+                                          
+               Accuracy : 0.845           
+                 95% CI : (0.7873, 0.8922)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.6899          
+ Mcnemar's Test P-Value : 1               
+                                          
+            Sensitivity : 0.8469          
+            Specificity : 0.8431          
+         Pos Pred Value : 0.8384          
+         Neg Pred Value : 0.8515          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4150          
+   Detection Prevalence : 0.4950          
+      Balanced Accuracy : 0.8450          
+                                          
+       'Positive' Class : 0               
+                                          

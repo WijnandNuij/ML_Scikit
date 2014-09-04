@@ -1,0 +1,58 @@
+Time difference of 2.789747 hours
+[1] "==============="
+Random Forest with Additional Feature Selection 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 721, 720, 720, 720, 719, ... 
+
+Resampling results across tuning parameters:
+
+  mtry  Accuracy  Kappa  Accuracy SD  Kappa SD
+   2    0.897     0.794  0.0347       0.0694  
+   5    0.892     0.785  0.0311       0.0623  
+   8    0.894     0.787  0.0330       0.0660  
+  12    0.894     0.787  0.0309       0.0617  
+  15    0.891     0.782  0.0316       0.0632  
+  19    0.889     0.777  0.0313       0.0625  
+  22    0.886     0.772  0.0311       0.0622  
+  26    0.892     0.785  0.0327       0.0654  
+  29    0.891     0.782  0.0351       0.0701  
+  33    0.892     0.784  0.0344       0.0687  
+  36    0.888     0.776  0.0384       0.0767  
+  40    0.889     0.777  0.0365       0.0728  
+
+Kappa was used to select the optimal model using  the largest value.
+The final value used for the model was mtry = 2. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 84 13
+         1 14 89
+                                          
+               Accuracy : 0.865           
+                 95% CI : (0.8097, 0.9091)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.7298          
+ Mcnemar's Test P-Value : 1               
+                                          
+            Sensitivity : 0.8571          
+            Specificity : 0.8725          
+         Pos Pred Value : 0.8660          
+         Neg Pred Value : 0.8641          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4200          
+   Detection Prevalence : 0.4850          
+      Balanced Accuracy : 0.8648          
+                                          
+       'Positive' Class : 0               
+                                          
