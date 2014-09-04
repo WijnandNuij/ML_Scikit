@@ -1,0 +1,59 @@
+Time difference of 20.57039 secs
+[1] "==============="
+Multivariate Adaptive Regression Spline 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 721, 720, 720, 720, 719, ... 
+
+Resampling results across tuning parameters:
+
+  nprune  Accuracy  Kappa  Accuracy SD  Kappa SD
+   2      0.689     0.378  0.0476       0.0952  
+   6      0.782     0.565  0.0365       0.0729  
+  11      0.801     0.601  0.0386       0.0772  
+  15      0.805     0.610  0.0469       0.0937  
+  20      0.807     0.614  0.0462       0.0923  
+  25      0.804     0.609  0.0486       0.0972  
+  29      0.799     0.599  0.0469       0.0939  
+  34      0.798     0.596  0.0468       0.0938  
+  39      0.796     0.592  0.0475       0.0951  
+  43      0.796     0.592  0.0475       0.0951  
+  48      0.796     0.592  0.0475       0.0951  
+  53      0.796     0.592  0.0475       0.0951  
+
+Tuning parameter 'degree' was held constant at a value of 1
+Kappa was used to select the optimal model using  the largest value.
+The final values used for the model were nprune = 20 and degree = 1. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 89 16
+         1  9 86
+                                         
+               Accuracy : 0.875          
+                 95% CI : (0.821, 0.9174)
+    No Information Rate : 0.51           
+    P-Value [Acc > NIR] : <2e-16         
+                                         
+                  Kappa : 0.7502         
+ Mcnemar's Test P-Value : 0.2301         
+                                         
+            Sensitivity : 0.9082         
+            Specificity : 0.8431         
+         Pos Pred Value : 0.8476         
+         Neg Pred Value : 0.9053         
+             Prevalence : 0.4900         
+         Detection Rate : 0.4450         
+   Detection Prevalence : 0.5250         
+      Balanced Accuracy : 0.8757         
+                                         
+       'Positive' Class : 0              
+                                         

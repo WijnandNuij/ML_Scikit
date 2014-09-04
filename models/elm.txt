@@ -1,0 +1,94 @@
+Time difference of 3.425437 secs
+[1] "==============="
+Extreme Learning Machine 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 720, 720, 720, 719, 720, ... 
+
+Resampling results across tuning parameters:
+
+  nhid  actfun   Accuracy  Kappa     Accuracy SD  Kappa SD
+   1    sin      0.496     -0.00708  0.0373       0.0739  
+   1    radbas   0.497      0.00000  0.0108       0.0000  
+   1    purelin  0.544      0.08784  0.0597       0.1199  
+   1    tansig   0.529      0.05758  0.0680       0.1355  
+   3    sin      0.484     -0.03146  0.0560       0.1116  
+   3    radbas   0.509      0.01526  0.0387       0.0784  
+   3    purelin  0.579      0.15878  0.0617       0.1226  
+   3    tansig   0.565      0.12940  0.0574       0.1142  
+   5    sin      0.509      0.01739  0.0666       0.1324  
+   5    radbas   0.507      0.01270  0.0451       0.0895  
+   5    purelin  0.613      0.22739  0.0625       0.1243  
+   5    tansig   0.620      0.24017  0.0507       0.1009  
+   7    sin      0.488     -0.02387  0.0657       0.1308  
+   7    radbas   0.517      0.03282  0.0563       0.1119  
+   7    purelin  0.637      0.27321  0.0451       0.0906  
+   7    tansig   0.641      0.28141  0.0526       0.1062  
+   9    sin      0.509      0.01785  0.0454       0.0902  
+   9    radbas   0.525      0.04520  0.0470       0.0955  
+   9    purelin  0.638      0.27490  0.0505       0.1018  
+   9    tansig   0.639      0.27755  0.0620       0.1240  
+  11    sin      0.477     -0.04548  0.0565       0.1138  
+  11    radbas   0.524      0.04626  0.0406       0.0811  
+  11    purelin  0.669      0.33865  0.0394       0.0792  
+  11    tansig   0.641      0.28248  0.0710       0.1416  
+  13    sin      0.492     -0.01531  0.0578       0.1162  
+  13    radbas   0.512      0.02114  0.0592       0.1188  
+  13    purelin  0.692      0.38370  0.0569       0.1148  
+  13    tansig   0.664      0.32782  0.0715       0.1428  
+  15    sin      0.514      0.02808  0.0727       0.1471  
+  15    radbas   0.520      0.03827  0.0445       0.0885  
+  15    purelin  0.686      0.37125  0.0469       0.0940  
+  15    tansig   0.676      0.35090  0.0587       0.1180  
+  17    sin      0.504      0.00790  0.0824       0.1651  
+  17    radbas   0.528      0.05358  0.0478       0.0957  
+  17    purelin  0.720      0.44023  0.0532       0.1060  
+  17    tansig   0.673      0.34409  0.0484       0.0968  
+  19    sin      0.504      0.00969  0.0647       0.1300  
+  19    radbas   0.518      0.03432  0.0581       0.1153  
+  19    purelin  0.725      0.44998  0.0591       0.1185  
+  19    tansig   0.687      0.37379  0.0704       0.1408  
+  21    sin      0.486     -0.02930  0.0412       0.0820  
+  21    radbas   0.527      0.05227  0.0534       0.1064  
+  21    purelin  0.739      0.47853  0.0434       0.0869  
+  21    tansig   0.720      0.44009  0.0464       0.0925  
+  23    sin      0.515      0.02965  0.0675       0.1346  
+  23    radbas   0.526      0.04891  0.0455       0.0909  
+  23    purelin  0.736      0.47145  0.0460       0.0917  
+  23    tansig   0.692      0.38375  0.0476       0.0952  
+
+Kappa was used to select the optimal model using  the largest value.
+The final values used for the model were nhid = 21 and actfun = purelin. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 70 20
+         1 28 82
+                                          
+               Accuracy : 0.76            
+                 95% CI : (0.6947, 0.8174)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : 3.423e-13       
+                                          
+                  Kappa : 0.519           
+ Mcnemar's Test P-Value : 0.3123          
+                                          
+            Sensitivity : 0.7143          
+            Specificity : 0.8039          
+         Pos Pred Value : 0.7778          
+         Neg Pred Value : 0.7455          
+             Prevalence : 0.4900          
+         Detection Rate : 0.3500          
+   Detection Prevalence : 0.4500          
+      Balanced Accuracy : 0.7591          
+                                          
+       'Positive' Class : 0               
+                                          
