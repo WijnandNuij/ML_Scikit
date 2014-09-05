@@ -1,3 +1,4 @@
+#runAllModels()
 
 runAllModels <- function(baseDir = '/home/wijnand/R_workspace_scikit')
 {

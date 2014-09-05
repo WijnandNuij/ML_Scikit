@@ -1,0 +1,58 @@
+Time difference of 1.91666 mins
+[1] "==============="
+Generalized Additive Model using Splines 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 720, 720, 720, 721, 719, ... 
+
+Resampling results across tuning parameters:
+
+  df    Accuracy  Kappa  Accuracy SD  Kappa SD
+  1.00  0.816     0.632  0.0395       0.0789  
+  1.18  0.820     0.640  0.0431       0.0863  
+  1.36  0.822     0.643  0.0459       0.0917  
+  1.55  0.822     0.645  0.0444       0.0886  
+  1.73  0.824     0.648  0.0458       0.0914  
+  1.91  0.829     0.657  0.0448       0.0894  
+  2.09  0.826     0.652  0.0452       0.0902  
+  2.27  0.828     0.656  0.0444       0.0887  
+  2.45  0.827     0.655  0.0439       0.0877  
+  2.64  0.826     0.652  0.0462       0.0924  
+  2.82  0.825     0.650  0.0420       0.0841  
+  3.00  0.820     0.640  0.0439       0.0879  
+
+Kappa was used to select the optimal model using  the largest value.
+The final value used for the model was df = 1.909091. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 75 14
+         1 23 88
+                                          
+               Accuracy : 0.815           
+                 95% CI : (0.7541, 0.8663)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.6292          
+ Mcnemar's Test P-Value : 0.1884          
+                                          
+            Sensitivity : 0.7653          
+            Specificity : 0.8627          
+         Pos Pred Value : 0.8427          
+         Neg Pred Value : 0.7928          
+             Prevalence : 0.4900          
+         Detection Rate : 0.3750          
+   Detection Prevalence : 0.4450          
+      Balanced Accuracy : 0.8140          
+                                          
+       'Positive' Class : 0               
+                                          

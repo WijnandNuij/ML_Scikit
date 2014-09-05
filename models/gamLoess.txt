@@ -1,0 +1,49 @@
+Time difference of 33.78064 secs
+[1] "==============="
+Generalized Additive Model using LOESS 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 721, 719, 720, 720, 721, 719, ... 
+
+Resampling results
+
+  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.801     0.601  0.0507       0.102   
+
+Tuning parameter 'span' was held constant at a value of 0.5
+Tuning
+ parameter 'degree' was held constant at a value of 1
+ 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 74 17
+         1 24 85
+                                          
+               Accuracy : 0.795           
+                 95% CI : (0.7323, 0.8487)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.5893          
+ Mcnemar's Test P-Value : 0.3487          
+                                          
+            Sensitivity : 0.7551          
+            Specificity : 0.8333          
+         Pos Pred Value : 0.8132          
+         Neg Pred Value : 0.7798          
+             Prevalence : 0.4900          
+         Detection Rate : 0.3700          
+   Detection Prevalence : 0.4550          
+      Balanced Accuracy : 0.7942          
+                                          
+       'Positive' Class : 0               
+                                          

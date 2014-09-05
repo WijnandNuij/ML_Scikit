@@ -1,0 +1,59 @@
+Time difference of 1.597307 mins
+[1] "==============="
+Boosted Generalized Additive Model 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 721, 720, 720, 719, 720, ... 
+
+Resampling results across tuning parameters:
+
+  mstop  Accuracy  Kappa  Accuracy SD  Kappa SD
+   50    0.822     0.645  0.0407       0.0814  
+  100    0.832     0.663  0.0397       0.0796  
+  150    0.831     0.661  0.0440       0.0881  
+  200    0.831     0.662  0.0433       0.0867  
+  250    0.831     0.662  0.0404       0.0808  
+  300    0.831     0.661  0.0414       0.0828  
+  350    0.826     0.652  0.0417       0.0835  
+  400    0.827     0.655  0.0397       0.0795  
+  450    0.827     0.655  0.0382       0.0765  
+  500    0.832     0.663  0.0380       0.0761  
+  550    0.831     0.661  0.0385       0.0769  
+  600    0.831     0.661  0.0393       0.0786  
+
+Tuning parameter 'prune' was held constant at a value of no
+Kappa was used to select the optimal model using  the largest value.
+The final values used for the model were mstop = 100 and prune = no. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 75 16
+         1 23 86
+                                          
+               Accuracy : 0.805           
+                 95% CI : (0.7432, 0.8575)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.6093          
+ Mcnemar's Test P-Value : 0.3367          
+                                          
+            Sensitivity : 0.7653          
+            Specificity : 0.8431          
+         Pos Pred Value : 0.8242          
+         Neg Pred Value : 0.7890          
+             Prevalence : 0.4900          
+         Detection Rate : 0.3750          
+   Detection Prevalence : 0.4550          
+      Balanced Accuracy : 0.8042          
+                                          
+       'Positive' Class : 0               
+                                          

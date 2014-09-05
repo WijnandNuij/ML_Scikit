@@ -1,0 +1,2177 @@
+
+R version 3.1.0 (2014-04-10) -- "Spring Dance"
+Copyright (C) 2014 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> runAllModels()
+'data.frame':	1000 obs. of  40 variables:
+ $ V1 : num  0.299 -1.174 1.192 1.573 -0.613 ...
+ $ V2 : num  -1.227 0.332 -0.414 -0.58 -0.644 ...
+ $ V3 : num  1.4984 0.9499 0.0671 -0.8663 1.1126 ...
+ $ V4 : num  -1.1762 -1.2853 -2.2336 -0.6038 -0.0324 ...
+ $ V5 : num  5.29 2.2 3.66 3.13 3.49 ...
+ $ V6 : num  0.2083 -0.1513 0.089 0.8703 -0.0119 ...
+ $ V7 : num  2.404 -0.427 0.203 -0.162 1.444 ...
+ $ V8 : num  1.59 2.62 -4.22 4.5 -4.29 ...
+ $ V9 : num  -0.0516 -0.7659 -1.1849 1.0387 -1.7613 ...
+ $ V10: num  0.6632 -0.0938 -1.2403 -1.0927 0.8077 ...
+ $ V11: num  -1.408 0.935 -0.89 -0.713 -0.417 ...
+ $ V12: num  1.115 1.058 0.91 -0.136 0.434 ...
+ $ V13: num  0.91 -0.539 -11.851 0.059 -12.823 ...
+ $ V14: num  2.2181 -0.1727 3.3524 -1.0835 -0.0482 ...
+ $ V15: num  4.306 -0.679 -4.862 1.623 -5.031 ...
+ $ V16: num  0.0889 0.6074 -0.9033 -1.6856 -0.7044 ...
+ $ V17: num  0.169 1.149 -1.824 -1.223 0.516 ...
+ $ V18: num  0.4134 2.4371 0.0454 -0.2158 -2.6359 ...
+ $ V19: num  1.514 -0.313 -2.126 0.156 -2.36 ...
+ $ V20: num  2.663 0.5281 1.1616 0.6279 -0.0534 ...
+ $ V21: num  -1.073 -0.513 -1.028 -0.733 0.741 ...
+ $ V22: num  0.149 0.766 -1.079 1.338 1.573 ...
+ $ V23: num  0.56 -1.467 1.849 1.336 0.724 ...
+ $ V24: num  4.38 -2.32 3.76 0.68 1.74 ...
+ $ V25: num  -0.464 1.647 0.624 0.505 0.336 ...
+ $ V26: num  -0.064 -1.556 -0.091 1.205 0.573 ...
+ $ V27: num  0.545 -1.646 -1.033 0.144 0.626 ...
+ $ V28: num  0.713 -0.198 -0.254 0.674 0.412 ...
+ $ V29: num  -1.49 -1.47 -4.38 1.03 -4.88 ...
+ $ V30: num  -2.64 -1.91 -1.2 3.07 -5.59 ...
+ $ V31: num  -0.85 -0.82 -0.605 1.023 0.514 ...
+ $ V32: num  -0.623 0.012 0.75 1.276 -1.803 ...
+ $ V33: num  -1.833 2.039 -3.361 -3.48 0.519 ...
+ $ V34: num  0.293 0.469 0.857 -1.065 -0.205 ...
+ $ V35: num  3.553 -0.518 -2.751 2.153 -4.745 ...
+ $ V36: num  0.718 0.422 -1.583 1.564 -1.52 ...
+ $ V37: num  3.306 0.804 1.672 2.767 1.831 ...
+ $ V38: num  -2.716 1.213 0.656 0.216 0.871 ...
+ $ V39: num  -2.682 1.383 -0.932 0.62 -1.895 ...
+ $ V40: num  0.101 -1.818 2.987 1.883 0.408 ...
+NULL
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+starting worker for localhost:11144 
+starting worker for localhost:11144 
+starting worker for localhost:11144 
+starting worker for localhost:11144 
+[1] "skipping model: hdda , already done."
+[1] "skipping model: JRip , already done."
+[1] "skipping model: lda , already done."
+[1] "skipping model: lda2 , already done."
+[1] "skipping model: J48 , already done."
+[1] "skipping model: LMT , already done."
+[1] "skipping model: LogitBoost , already done."
+[1] "skipping model: lssvmRadial , already done."
+[1] "skipping model: lvq , already done."
+[1] "skipping model: rda , already done."
+[1] "skipping model: rFerns , already done."
+[1] "skipping model: rocc , already done."
+[1] "skipping model: rpartCost , already done."
+[1] "skipping model: rrlda , already done."
+[1] "skipping model: RSimca , already done."
+[1] "skipping model: sda , already done."
+[1] "skipping model: slda , already done."
+[1] "skipping model: sparseLDA , already done."
+[1] "skipping model: stepLDA , already done."
+[1] "skipping model: stepQDA , already done."
+[1] "skipping model: svmRadialWeights , already done."
+[1] "skipping model: ada , already done."
+[1] "skipping model: bagFDA , already done."
+[1] "skipping model: C5.0 , already done."
+[1] "skipping model: C5.0Cost , already done."
+[1] "skipping model: C5.0Rules , already done."
+[1] "skipping model: C5.0Tree , already done."
+[1] "skipping model: CSimca , already done."
+[1] "skipping model: gpls , already done."
+[1] "skipping model: hda , already done."
+[1] "skipping model: multinom , already done."
+[1] "skipping model: nb , already done."
+[1] "skipping model: oblique.tree , already done."
+[1] "skipping model: OneR , already done."
+[1] "skipping model: pam , already done."
+[1] "skipping model: PART , already done."
+[1] "skipping model: pda , already done."
+[1] "skipping model: pda2 , already done."
+[1] "skipping model: PenalizedLDA , already done."
+[1] "skipping model: plr , already done."
+[1] "skipping model: protoclass , already done."
+[1] "skipping model: avNNet , already done."
+[1] "skipping model: bayesglm , already done."
+[1] "skipping model: bdk , already done."
+[1] "skipping model: blackboost , already done."
+[1] "skipping model: Boruta , already done."
+[1] "skipping model: bstLs , already done."
+[1] "skipping model: bstSm , already done."
+[1] "skipping model: bstTree , already done."
+[1] "skipping model: cforest , already done."
+[1] "skipping model: ctree , already done."
+[1] "skipping model: ctree2 , already done."
+[1] "skipping model: earth , already done."
+[1] "skipping model: elm , already done."
+[1] "skipping model: evtree , already done."
+[1] "skipping model: extraTrees , already done."
+Loading required package: mgcv
+Loading required package: nlme
+This is mgcv 1.8-3. For overview type 'help("mgcv-package")'.
+Type: EXEC 
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Type: EXEC 
+Loading required package: caret
+Loading required package: lattice
+Type: EXEC 
+Loading required package: caret
+loaded caret and set parent environment
+Type: EXEC 
+Loading required package: caret
+Loading required package: nlme
+Loading required package: ggplot2
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: ggplot2
+loaded caret and set parent environment
+Loading required package: nlme
+loaded caret and set parent environment
+Loading required package: nlme
+loaded caret and set parent environment
+This is mgcv 1.8-3. For overview type 'help("mgcv-package")'.
+Loading required package: nlme
+This is mgcv 1.8-3. For overview type 'help("mgcv-package")'.
+This is mgcv 1.8-3. For overview type 'help("mgcv-package")'.
+This is mgcv 1.8-3. For overview type 'help("mgcv-package")'.
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
++ Fold01.Rep1: select= TRUE, method=GCV.Cp 
++ Fold02.Rep1: select= TRUE, method=GCV.Cp 
+ 
++ Fold02.Rep1: select=FALSE, method=GCV.Cp 
+- Fold02.Rep1: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold03.Rep1: select= TRUE, method=GCV.Cp 
+- Fold01.Rep1: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold03.Rep1: select=FALSE, method=GCV.Cp 
+- Fold03.Rep1: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold04.Rep1: select= TRUE, method=GCV.Cp 
+- Fold03.Rep1: select= TRUE, method=GCV.Cp 
+Type: EXEC 
++ Fold04.Rep1: select=FALSE, method=GCV.Cp 
+- Fold01.Rep1: select= TRUE, method=GCV.Cp 
+Type: EXEC 
++ Fold05.Rep1: select= TRUE, method=GCV.Cp 
+- Fold02.Rep1: select= TRUE, method=GCV.Cp 
+Type: EXEC 
++ Fold05.Rep1: select=FALSE, method=GCV.Cp 
+- Fold05.Rep1: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold06.Rep1: select= TRUE, method=GCV.Cp 
+- Fold04.Rep1: select= TRUE, method=GCV.Cp 
+Type: EXEC 
++ Fold06.Rep1: select=FALSE, method=GCV.Cp 
+- Fold04.Rep1: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold07.Rep1: select= TRUE, method=GCV.Cp 
+- Fold06.Rep1: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold07.Rep1: select=FALSE, method=GCV.Cp 
+- Fold07.Rep1: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold08.Rep1: select= TRUE, method=GCV.Cp 
+- Fold06.Rep1: select= TRUE, method=GCV.Cp 
+Type: EXEC 
++ Fold08.Rep1: select=FALSE, method=GCV.Cp 
+- Fold07.Rep1: select= TRUE, method=GCV.Cp 
+Type: EXEC 
++ Fold09.Rep1: select= TRUE, method=GCV.Cp 
+- Fold08.Rep1: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold09.Rep1: select=FALSE, method=GCV.Cp 
+- Fold09.Rep1: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold10.Rep1: select= TRUE, method=GCV.Cp 
+- Fold08.Rep1: select= TRUE, method=GCV.Cp 
+Type: EXEC 
++ Fold10.Rep1: select=FALSE, method=GCV.Cp 
+- Fold05.Rep1: select= TRUE, method=GCV.Cp 
+Type: EXEC 
++ Fold01.Rep2: select= TRUE, method=GCV.Cp 
+- Fold10.Rep1: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold01.Rep2: select=FALSE, method=GCV.Cp 
+- Fold09.Rep1: select= TRUE, method=GCV.Cp 
+Type: EXEC 
++ Fold02.Rep2: select= TRUE, method=GCV.Cp 
+- Fold01.Rep2: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold02.Rep2: select=FALSE, method=GCV.Cp 
+- Fold02.Rep2: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold03.Rep2: select= TRUE, method=GCV.Cp 
+- Fold01.Rep2: select= TRUE, method=GCV.Cp 
+Type: EXEC 
++ Fold03.Rep2: select=FALSE, method=GCV.Cp 
+- Fold02.Rep2: select= TRUE, method=GCV.Cp 
+Type: EXEC 
++ Fold04.Rep2: select= TRUE, method=GCV.Cp 
+- Fold10.Rep1: select= TRUE, method=GCV.Cp 
+Type: EXEC 
++ Fold04.Rep2: select=FALSE, method=GCV.Cp 
+- Fold03.Rep2: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold05.Rep2: select= TRUE, method=GCV.Cp 
+- Fold04.Rep2: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold05.Rep2: select=FALSE, method=GCV.Cp 
+- Fold05.Rep2: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold06.Rep2: select= TRUE, method=GCV.Cp 
+- Fold03.Rep2: select= TRUE, method=GCV.Cp 
+Type: EXEC 
++ Fold06.Rep2: select=FALSE, method=GCV.Cp 
+- Fold04.Rep2: select= TRUE, method=GCV.Cp 
+Type: EXEC 
++ Fold07.Rep2: select= TRUE, method=GCV.Cp 
+- Fold06.Rep2: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold07.Rep2: select=FALSE, method=GCV.Cp 
+- Fold05.Rep2: select= TRUE, method=GCV.Cp 
+Type: EXEC 
++ Fold08.Rep2: select= TRUE, method=GCV.Cp 
+- Fold07.Rep2: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold08.Rep2: select=FALSE, method=GCV.Cp 
+- Fold08.Rep2: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold09.Rep2: select= TRUE, method=GCV.Cp 
+- Fold06.Rep2: select= TRUE, method=GCV.Cp 
+Type: EXEC 
++ Fold09.Rep2: select=FALSE, method=GCV.Cp 
+- Fold07.Rep2: select= TRUE, method=GCV.Cp 
+Type: EXEC 
++ Fold10.Rep2: select= TRUE, method=GCV.Cp 
+- Fold09.Rep2: select=FALSE, method=GCV.Cp 
+Type: EXEC 
++ Fold10.Rep2: select=FALSE, method=GCV.Cp 
+- Fold08.Rep2: select= TRUE, method=GCV.Cp 
+- Fold10.Rep2: select=FALSE, method=GCV.Cp 
+- Fold10.Rep2: select= TRUE, method=GCV.Cp 
+- Fold09.Rep2: select= TRUE, method=GCV.Cp 
+Aggregating results
+Selecting tuning parameters
+Fitting select = FALSE, method = GCV.Cp on full training set
+[1] "gam : 0.17"
+[1] "done"
+Loading required package: mboost
+Loading required package: parallel
+
+Attaching package: ‘parallel’
+
+The following objects are masked from ‘package:snow’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, clusterSplit, makeCluster, parApply,
+    parCapply, parLapply, parRapply, parSapply, splitIndices,
+    stopCluster
+
+This is mboost 2.3-0. See ‘package?mboost’ and the NEWS file
+for a complete list of changes.
+
+
+Attaching package: ‘mboost’
+
+The following object is masked from ‘package:ggplot2’:
+
+    %+%
+
+Type: EXEC 
+loaded caret and set parent environment
+Type: EXEC 
+loaded caret and set parent environment
+Loading required package: parallel
+Type: EXEC 
+loaded caret and set parent environment
+Loading required package: parallel
+Type: EXEC 
+loaded caret and set parent environment
+Loading required package: parallel
+Loading required package: parallel
+
+Attaching package: ‘parallel’
+
+The following objects are masked from ‘package:snow’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, clusterSplit, makeCluster, parApply,
+    parCapply, parLapply, parRapply, parSapply, splitIndices,
+    stopCluster
+
+
+Attaching package: ‘parallel’
+
+The following objects are masked from ‘package:snow’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, clusterSplit, makeCluster, parApply,
+    parCapply, parLapply, parRapply, parSapply, splitIndices,
+    stopCluster
+
+
+Attaching package: ‘parallel’
+
+The following objects are masked from ‘package:snow’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, clusterSplit, makeCluster, parApply,
+    parCapply, parLapply, parRapply, parSapply, splitIndices,
+    stopCluster
+
+
+Attaching package: ‘parallel’
+
+The following objects are masked from ‘package:snow’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, clusterSplit, makeCluster, parApply,
+    parCapply, parLapply, parRapply, parSapply, splitIndices,
+    stopCluster
+
+This is mboost 2.3-0. See ‘package?mboost’ and the NEWS file
+for a complete list of changes.
+
+This is mboost 2.3-0. See ‘package?mboost’ and the NEWS file
+for a complete list of changes.
+
+
+Attaching package: ‘mboost’
+
+The following object is masked from ‘package:ggplot2’:
+
+    %+%
+
+
+Attaching package: ‘mboost’
+
+The following object is masked from ‘package:ggplot2’:
+
+    %+%
+
+This is mboost 2.3-0. See ‘package?mboost’ and the NEWS file
+for a complete list of changes.
+
+
+Attaching package: ‘mboost’
+
+The following object is masked from ‘package:ggplot2’:
+
+    %+%
+
+This is mboost 2.3-0. See ‘package?mboost’ and the NEWS file
+for a complete list of changes.
+
+
+Attaching package: ‘mboost’
+
+The following object is masked from ‘package:ggplot2’:
+
+    %+%
+
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
++ Fold01.Rep1: mstop=600, prune=no 
++ Fold03.Rep1: mstop=600, prune=no 
++ Fold04.Rep1: mstop=600, prune=no 
++ Fold02.Rep1: mstop=600, prune=no 
+- Fold02.Rep1: mstop=600, prune=no 
+Type: EXEC 
++ Fold05.Rep1: mstop=600, prune=no 
+- Fold01.Rep1: mstop=600, prune=no 
+Type: EXEC 
++ Fold06.Rep1: mstop=600, prune=no 
+- Fold04.Rep1: mstop=600, prune=no 
+Type: EXEC 
++ Fold07.Rep1: mstop=600, prune=no 
+- Fold03.Rep1: mstop=600, prune=no 
+Type: EXEC 
++ Fold08.Rep1: mstop=600, prune=no 
+- Fold07.Rep1: mstop=600, prune=no 
+Type: EXEC 
++ Fold09.Rep1: mstop=600, prune=no 
+- Fold06.Rep1: mstop=600, prune=no 
+Type: EXEC 
++ Fold10.Rep1: mstop=600, prune=no 
+- Fold05.Rep1: mstop=600, prune=no 
+Type: EXEC 
++ Fold01.Rep2: mstop=600, prune=no 
+- Fold08.Rep1: mstop=600, prune=no 
+Type: EXEC 
++ Fold02.Rep2: mstop=600, prune=no 
+- Fold09.Rep1: mstop=600, prune=no 
+Type: EXEC 
++ Fold03.Rep2: mstop=600, prune=no 
+- Fold10.Rep1: mstop=600, prune=no 
+Type: EXEC 
++ Fold04.Rep2: mstop=600, prune=no 
+- Fold01.Rep2: mstop=600, prune=no 
+Type: EXEC 
++ Fold05.Rep2: mstop=600, prune=no 
+- Fold02.Rep2: mstop=600, prune=no 
+Type: EXEC 
++ Fold06.Rep2: mstop=600, prune=no 
+- Fold04.Rep2: mstop=600, prune=no 
+Type: EXEC 
++ Fold07.Rep2: mstop=600, prune=no 
+- Fold03.Rep2: mstop=600, prune=no 
+Type: EXEC 
++ Fold08.Rep2: mstop=600, prune=no 
+- Fold05.Rep2: mstop=600, prune=no 
+Type: EXEC 
++ Fold09.Rep2: mstop=600, prune=no 
+- Fold06.Rep2: mstop=600, prune=no 
+Type: EXEC 
++ Fold10.Rep2: mstop=600, prune=no 
+- Fold08.Rep2: mstop=600, prune=no 
+- Fold07.Rep2: mstop=600, prune=no 
+- Fold09.Rep2: mstop=600, prune=no 
+- Fold10.Rep2: mstop=600, prune=no 
+Aggregating results
+Selecting tuning parameters
+Fitting mstop = 100, prune = no on full training set
+[1] "gamboost : 0.805"
+[1] "done"
+Loading required package: gam
+Loading required package: splines
+Loaded gam 1.09.1
+
+
+Attaching package: ‘gam’
+
+The following objects are masked from ‘package:mgcv’:
+
+    gam, gam.control, gam.fit, plot.gam, predict.gam, s, summary.gam
+
+Type: EXEC 
+loaded caret and set parent environment
+Type: EXEC 
+loaded caret and set parent environment
+Loading required package: splines
+Type: EXEC 
+loaded caret and set parent environment
+Loading required package: splines
+Type: EXEC 
+loaded caret and set parent environment
+Loading required package: splines
+Loading required package: splines
+Loaded gam 1.09.1
+
+Loaded gam 1.09.1
+
+
+Attaching package: ‘gam’
+
+Loaded gam 1.09.1
+
+The following objects are masked from ‘package:mgcv’:
+
+    gam, gam.control, gam.fit, plot.gam, predict.gam, s, summary.gam
+
+
+Attaching package: ‘gam’
+
+The following objects are masked from ‘package:mgcv’:
+
+    gam, gam.control, gam.fit, plot.gam, predict.gam, s, summary.gam
+
+Loaded gam 1.09.1
+
+
+Attaching package: ‘gam’
+
+The following objects are masked from ‘package:mgcv’:
+
+    gam, gam.control, gam.fit, plot.gam, predict.gam, s, summary.gam
+
+
+Attaching package: ‘gam’
+
+The following objects are masked from ‘package:mgcv’:
+
+    gam, gam.control, gam.fit, plot.gam, predict.gam, s, summary.gam
+
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
++ Fold01.Rep1: span=0.5, degree=1+
+ 
++ Fold03.Rep1: span=0.5, degree=1 
++ Fold04.Rep1: span=0.5, degree=1 
+- Fold01.Rep1: span=0.5, degree=1 
+Type: EXEC 
++ Fold05.Rep1: span=0.5, degree=1 
+- Fold04.Rep1: span=0.5, degree=1 
+Type: EXEC 
++ Fold06.Rep1: span=0.5, degree=1 
+- Fold02.Rep1: span=0.5, degree=1 
+Type: EXEC 
++ Fold07.Rep1: span=0.5, degree=1 
+- Fold03.Rep1: span=0.5, degree=1 
+Type: EXEC 
++ Fold08.Rep1: span=0.5, degree=1 
+- Fold05.Rep1: span=0.5, degree=1 
+Type: EXEC 
++ Fold09.Rep1: span=0.5, degree=1 
+- Fold06.Rep1: span=0.5, degree=1 
+Type: EXEC 
++ Fold10.Rep1: span=0.5, degree=1 
+- Fold07.Rep1: span=0.5, degree=1 
+Type: EXEC 
++ Fold01.Rep2: span=0.5, degree=1 
+- Fold08.Rep1: span=0.5, degree=1 
+Type: EXEC 
++ Fold02.Rep2: span=0.5, degree=1 
+- Fold09.Rep1: span=0.5, degree=1 
+Type: EXEC 
++ Fold03.Rep2: span=0.5, degree=1 
+- Fold10.Rep1: span=0.5, degree=1 
+Type: EXEC 
++ Fold04.Rep2: span=0.5, degree=1 
+- Fold01.Rep2: span=0.5, degree=1 
+Type: EXEC 
++ Fold05.Rep2: span=0.5, degree=1 
+- Fold02.Rep2: span=0.5, degree=1 
+Type: EXEC 
++ Fold06.Rep2: span=0.5, degree=1 
+- Fold03.Rep2: span=0.5, degree=1 
+Type: EXEC 
++ Fold07.Rep2: span=0.5, degree=1 
+- Fold05.Rep2: span=0.5, degree=1 
+Type: EXEC 
++ Fold08.Rep2: span=0.5, degree=1 
+- Fold04.Rep2: span=0.5, degree=1 
+Type: EXEC 
++ Fold09.Rep2: span=0.5, degree=1 
+- Fold06.Rep2: span=0.5, degree=1 
+Type: EXEC 
++ Fold10.Rep2: span=0.5, degree=1 
+- Fold08.Rep2: span=0.5, degree=1 
+- Fold09.Rep2: span=0.5, degree=1 
+- Fold07.Rep2: span=0.5, degree=1 
+- Fold10.Rep2: span=0.5, degree=1 
+Aggregating results
+Fitting final model on full training set
+[1] "gamLoess : 0.795"
+[1] "done"
+Type: EXEC 
+loaded caret and set parent environment
+Type: EXEC 
+loaded caret and set parent environment
+Type: EXEC 
+loaded caret and set parent environment
+Type: EXEC 
+loaded caret and set parent environment
+Type: EXEC 
+Type: EXEC 
++ Fold01.Rep1: df=1.000 
++ Fold01.Rep1: df=1.182 
++ Fold01.Rep1: df=1.364 
++ Fold01.Rep1: df=1.545 
+- Fold01.Rep1: df=1.182 
+Type: EXEC 
++ Fold01.Rep1: df=1.727 
+- Fold01.Rep1: df=1.364 
+Type: EXEC 
++ Fold01.Rep1: df=1.909 
+- Fold01.Rep1: df=1.545 
+Type: EXEC 
++ Fold01.Rep1: df=2.091 
+- Fold01.Rep1: df=1.000 
+Type: EXEC 
++ Fold01.Rep1: df=2.273 
+- Fold01.Rep1: df=1.727 
+Type: EXEC 
++ Fold01.Rep1: df=2.455 
+- Fold01.Rep1: df=1.909 
+Type: EXEC 
++ Fold01.Rep1: df=2.636 
+- Fold01.Rep1: df=2.091 
+Type: EXEC 
++ Fold01.Rep1: df=2.818 
+- Fold01.Rep1: df=2.273 
+Type: EXEC 
++ Fold01.Rep1: df=3.000 
+- Fold01.Rep1: df=2.455 
+Type: EXEC 
++ Fold02.Rep1: df=1.000 
+- Fold01.Rep1: df=2.636 
+Type: EXEC 
++ Fold02.Rep1: df=1.182 
+- Fold01.Rep1: df=2.818 
+Type: EXEC 
++ Fold02.Rep1: df=1.364 
+- Fold02.Rep1: df=1.182 
+Type: EXEC 
++ Fold02.Rep1: df=1.545 
+- Fold01.Rep1: df=3.000 
+Type: EXEC 
++ Fold02.Rep1: df=1.727 
+- Fold02.Rep1: df=1.364 
+Type: EXEC 
++ Fold02.Rep1: df=1.909 
+- Fold02.Rep1: df=1.545 
+Type: EXEC 
++ Fold02.Rep1: df=2.091 
+- Fold02.Rep1: df=1.000 
+Type: EXEC 
++ Fold02.Rep1: df=2.273 
+- Fold02.Rep1: df=1.727 
+Type: EXEC 
++ Fold02.Rep1: df=2.455 
+- Fold02.Rep1: df=1.909 
+Type: EXEC 
++ Fold02.Rep1: df=2.636 
+- Fold02.Rep1: df=2.273 
+Type: EXEC 
++ Fold02.Rep1: df=2.818 
+- Fold02.Rep1: df=2.091 
+Type: EXEC 
++ Fold02.Rep1: df=3.000 
+- Fold02.Rep1: df=2.455 
+Type: EXEC 
++ Fold03.Rep1: df=1.000 
+- Fold02.Rep1: df=2.636 
+Type: EXEC 
++ Fold03.Rep1: df=1.182 
+- Fold02.Rep1: df=2.818 
+Type: EXEC 
++ Fold03.Rep1: df=1.364 
+- Fold03.Rep1: df=1.182 
+Type: EXEC 
++ Fold03.Rep1: df=1.545 
+- Fold02.Rep1: df=3.000 
+Type: EXEC 
++ Fold03.Rep1: df=1.727 
+- Fold03.Rep1: df=1.000 
+Type: EXEC 
++ Fold03.Rep1: df=1.909 
+- Fold03.Rep1: df=1.364 
+Type: EXEC 
++ Fold03.Rep1: df=2.091 
+- Fold03.Rep1: df=1.545 
+Type: EXEC 
++ Fold03.Rep1: df=2.273 
+- Fold03.Rep1: df=1.727 
+Type: EXEC 
++ Fold03.Rep1: df=2.455 
+- Fold03.Rep1: df=1.909 
+Type: EXEC 
++ Fold03.Rep1: df=2.636 
+- Fold03.Rep1: df=2.091 
+Type: EXEC 
++ Fold03.Rep1: df=2.818 
+- Fold03.Rep1: df=2.273 
+Type: EXEC 
++ Fold03.Rep1: df=3.000 
+- Fold03.Rep1: df=2.455 
+Type: EXEC 
++ Fold04.Rep1: df=1.000 
+- Fold03.Rep1: df=2.636 
+Type: EXEC 
++ Fold04.Rep1: df=1.182 
+- Fold04.Rep1: df=1.182 
+Type: EXEC 
++ Fold04.Rep1: df=1.364 
+- Fold03.Rep1: df=2.818 
+Type: EXEC 
++ Fold04.Rep1: df=1.545 
+- Fold03.Rep1: df=3.000 
+Type: EXEC 
++ Fold04.Rep1: df=1.727 
+- Fold04.Rep1: df=1.364 
+Type: EXEC 
++ Fold04.Rep1: df=1.909 
+- Fold04.Rep1: df=1.545 
+Type: EXEC 
++ Fold04.Rep1: df=2.091 
+- Fold04.Rep1: df=1.000 
+Type: EXEC 
++ Fold04.Rep1: df=2.273 
+- Fold04.Rep1: df=1.727 
+Type: EXEC 
++ Fold04.Rep1: df=2.455 
+- Fold04.Rep1: df=1.909 
+Type: EXEC 
++ Fold04.Rep1: df=2.636 
+- Fold04.Rep1: df=2.091 
+Type: EXEC 
++ Fold04.Rep1: df=2.818 
+- Fold04.Rep1: df=2.273 
+Type: EXEC 
++ Fold04.Rep1: df=3.000 
+- Fold04.Rep1: df=2.455 
+Type: EXEC 
++ Fold05.Rep1: df=1.000 
+- Fold04.Rep1: df=2.636 
+Type: EXEC 
++ Fold05.Rep1: df=1.182 
+- Fold04.Rep1: df=2.818 
+Type: EXEC 
++ Fold05.Rep1: df=1.364 
+- Fold04.Rep1: df=3.000 
+Type: EXEC 
++ Fold05.Rep1: df=1.545 
+- Fold05.Rep1: df=1.182 
+Type: EXEC 
++ Fold05.Rep1: df=1.727 
+- Fold05.Rep1: df=1.364 
+Type: EXEC 
++ Fold05.Rep1: df=1.909 
+- Fold05.Rep1: df=1.000 
+Type: EXEC 
++ Fold05.Rep1: df=2.091 
+- Fold05.Rep1: df=1.545 
+Type: EXEC 
++ Fold05.Rep1: df=2.273 
+- Fold05.Rep1: df=1.727 
+Type: EXEC 
++ Fold05.Rep1: df=2.455 
+- Fold05.Rep1: df=1.909 
+Type: EXEC 
++ Fold05.Rep1: df=2.636 
+- Fold05.Rep1: df=2.091 
+Type: EXEC 
++ Fold05.Rep1: df=2.818 
+- Fold05.Rep1: df=2.273 
+Type: EXEC 
++ Fold05.Rep1: df=3.000 
+- Fold05.Rep1: df=2.455 
+Type: EXEC 
++ Fold06.Rep1: df=1.000 
+- Fold05.Rep1: df=2.636 
+Type: EXEC 
++ Fold06.Rep1: df=1.182 
+- Fold05.Rep1: df=2.818 
+Type: EXEC 
++ Fold06.Rep1: df=1.364 
+- Fold05.Rep1: df=3.000 
+Type: EXEC 
++ Fold06.Rep1: df=1.545 
+- Fold06.Rep1: df=1.000 
+Type: EXEC 
++ Fold06.Rep1: df=1.727 
+- Fold06.Rep1: df=1.182 
+Type: EXEC 
++ Fold06.Rep1: df=1.909 
+- Fold06.Rep1: df=1.364 
+Type: EXEC 
++ Fold06.Rep1: df=2.091 
+- Fold06.Rep1: df=1.545 
+Type: EXEC 
++ Fold06.Rep1: df=2.273 
+- Fold06.Rep1: df=1.727 
+Type: EXEC 
++ Fold06.Rep1: df=2.455 
+- Fold06.Rep1: df=1.909 
+Type: EXEC 
++ Fold06.Rep1: df=2.636 
+- Fold06.Rep1: df=2.091 
+Type: EXEC 
++ Fold06.Rep1: df=2.818 
+- Fold06.Rep1: df=2.273 
+Type: EXEC 
++ Fold06.Rep1: df=3.000 
+- Fold06.Rep1: df=2.455 
+Type: EXEC 
++ Fold07.Rep1: df=1.000 
+- Fold06.Rep1: df=2.636 
+Type: EXEC 
++ Fold07.Rep1: df=1.182 
+- Fold06.Rep1: df=2.818 
+Type: EXEC 
++ Fold07.Rep1: df=1.364 
+- Fold06.Rep1: df=3.000 
+Type: EXEC 
++ Fold07.Rep1: df=1.545 
+- Fold07.Rep1: df=1.182 
+Type: EXEC 
++ Fold07.Rep1: df=1.727 
+- Fold07.Rep1: df=1.364 
+Type: EXEC 
++ Fold07.Rep1: df=1.909 
+- Fold07.Rep1: df=1.545 
+Type: EXEC 
++ Fold07.Rep1: df=2.091 
+- Fold07.Rep1: df=1.727 
+Type: EXEC 
++ Fold07.Rep1: df=2.273 
+- Fold07.Rep1: df=1.909 
+Type: EXEC 
++ Fold07.Rep1: df=2.455 
+- Fold07.Rep1: df=2.091 
+Type: EXEC 
++ Fold07.Rep1: df=2.636 
+- Fold07.Rep1: df=1.000 
+Type: EXEC 
++ Fold07.Rep1: df=2.818 
+- Fold07.Rep1: df=2.273 
+Type: EXEC 
++ Fold07.Rep1: df=3.000 
+- Fold07.Rep1: df=2.455 
+Type: EXEC 
++ Fold08.Rep1: df=1.000 
+- Fold07.Rep1: df=2.636 
+Type: EXEC 
++ Fold08.Rep1: df=1.182 
+- Fold07.Rep1: df=2.818 
+Type: EXEC 
++ Fold08.Rep1: df=1.364 
+- Fold07.Rep1: df=3.000 
+Type: EXEC 
++ Fold08.Rep1: df=1.545 
+- Fold08.Rep1: df=1.000 
+Type: EXEC 
++ Fold08.Rep1: df=1.727 
+- Fold08.Rep1: df=1.182 
+Type: EXEC 
++ Fold08.Rep1: df=1.909 
+- Fold08.Rep1: df=1.364 
+Type: EXEC 
++ Fold08.Rep1: df=2.091 
+- Fold08.Rep1: df=1.545 
+Type: EXEC 
++ Fold08.Rep1: df=2.273 
+- Fold08.Rep1: df=1.727 
+Type: EXEC 
++ Fold08.Rep1: df=2.455 
+- Fold08.Rep1: df=1.909 
+Type: EXEC 
++ Fold08.Rep1: df=2.636 
+- Fold08.Rep1: df=2.091 
+Type: EXEC 
++ Fold08.Rep1: df=2.818 
+- Fold08.Rep1: df=2.273 
+Type: EXEC 
++ Fold08.Rep1: df=3.000 
+- Fold08.Rep1: df=2.455 
+Type: EXEC 
++ Fold09.Rep1: df=1.000 
+- Fold08.Rep1: df=2.636 
+Type: EXEC 
++ Fold09.Rep1: df=1.182 
+- Fold08.Rep1: df=2.818 
+Type: EXEC 
++ Fold09.Rep1: df=1.364 
+- Fold08.Rep1: df=3.000 
+Type: EXEC 
++ Fold09.Rep1: df=1.545 
+- Fold09.Rep1: df=1.182 
+Type: EXEC 
++ Fold09.Rep1: df=1.727 
+- Fold09.Rep1: df=1.364 
+Type: EXEC 
++ Fold09.Rep1: df=1.909 
+- Fold09.Rep1: df=1.545 
+Type: EXEC 
++ Fold09.Rep1: df=2.091 
+- Fold09.Rep1: df=1.727 
+Type: EXEC 
++ Fold09.Rep1: df=2.273 
+- Fold09.Rep1: df=1.909 
+Type: EXEC 
++ Fold09.Rep1: df=2.455 
+- Fold09.Rep1: df=2.091 
+Type: EXEC 
++ Fold09.Rep1: df=2.636 
+- Fold09.Rep1: df=2.273 
+Type: EXEC 
++ Fold09.Rep1: df=2.818 
+- Fold09.Rep1: df=1.000 
+Type: EXEC 
++ Fold09.Rep1: df=3.000 
+- Fold09.Rep1: df=2.455 
+Type: EXEC 
++ Fold10.Rep1: df=1.000 
+- Fold09.Rep1: df=2.636 
+Type: EXEC 
++ Fold10.Rep1: df=1.182 
+- Fold09.Rep1: df=2.818 
+Type: EXEC 
++ Fold10.Rep1: df=1.364 
+- Fold09.Rep1: df=3.000 
+Type: EXEC 
++ Fold10.Rep1: df=1.545 
+- Fold10.Rep1: df=1.182 
+Type: EXEC 
++ Fold10.Rep1: df=1.727 
+- Fold10.Rep1: df=1.364 
+Type: EXEC 
++ Fold10.Rep1: df=1.909 
+- Fold10.Rep1: df=1.545 
+Type: EXEC 
++ Fold10.Rep1: df=2.091 
+- Fold10.Rep1: df=1.727 
+Type: EXEC 
++ Fold10.Rep1: df=2.273 
+- Fold10.Rep1: df=1.909 
+Type: EXEC 
++ Fold10.Rep1: df=2.455 
+- Fold10.Rep1: df=2.091 
+Type: EXEC 
++ Fold10.Rep1: df=2.636 
+- Fold10.Rep1: df=2.273 
+Type: EXEC 
++ Fold10.Rep1: df=2.818 
+- Fold10.Rep1: df=1.000 
+Type: EXEC 
++ Fold10.Rep1: df=3.000 
+- Fold10.Rep1: df=2.455 
+Type: EXEC 
++ Fold01.Rep2: df=1.000 
+- Fold10.Rep1: df=2.636 
+Type: EXEC 
++ Fold01.Rep2: df=1.182 
+- Fold10.Rep1: df=2.818 
+Type: EXEC 
++ Fold01.Rep2: df=1.364 
+- Fold10.Rep1: df=3.000 
+Type: EXEC 
++ Fold01.Rep2: df=1.545 
+- Fold01.Rep2: df=1.182 
+Type: EXEC 
++ Fold01.Rep2: df=1.727 
+- Fold01.Rep2: df=1.000 
+Type: EXEC 
++ Fold01.Rep2: df=1.909 
+- Fold01.Rep2: df=1.364 
+Type: EXEC 
++ Fold01.Rep2: df=2.091 
+- Fold01.Rep2: df=1.545 
+Type: EXEC 
++ Fold01.Rep2: df=2.273 
+- Fold01.Rep2: df=1.727 
+Type: EXEC 
++ Fold01.Rep2: df=2.455 
+- Fold01.Rep2: df=1.909 
+Type: EXEC 
++ Fold01.Rep2: df=2.636 
+- Fold01.Rep2: df=2.091 
+Type: EXEC 
++ Fold01.Rep2: df=2.818 
+- Fold01.Rep2: df=2.273 
+Type: EXEC 
++ Fold01.Rep2: df=3.000 
+- Fold01.Rep2: df=2.455 
+Type: EXEC 
++ Fold02.Rep2: df=1.000 
+- Fold01.Rep2: df=2.636 
+Type: EXEC 
++ Fold02.Rep2: df=1.182 
+- Fold01.Rep2: df=2.818 
+Type: EXEC 
++ Fold02.Rep2: df=1.364 
+- Fold01.Rep2: df=3.000 
+Type: EXEC 
++ Fold02.Rep2: df=1.545 
+- Fold02.Rep2: df=1.182 
+Type: EXEC 
++ Fold02.Rep2: df=1.727 
+- Fold02.Rep2: df=1.364 
+Type: EXEC 
++ Fold02.Rep2: df=1.909 
+- Fold02.Rep2: df=1.545 
+Type: EXEC 
++ Fold02.Rep2: df=2.091 
+- Fold02.Rep2: df=1.727 
+Type: EXEC 
++ Fold02.Rep2: df=2.273 
+- Fold02.Rep2: df=1.909 
+Type: EXEC 
++ Fold02.Rep2: df=2.455 
+- Fold02.Rep2: df=1.000 
+Type: EXEC 
++ Fold02.Rep2: df=2.636 
+- Fold02.Rep2: df=2.091 
+Type: EXEC 
++ Fold02.Rep2: df=2.818 
+- Fold02.Rep2: df=2.273 
+Type: EXEC 
++ Fold02.Rep2: df=3.000 
+- Fold02.Rep2: df=2.455 
+Type: EXEC 
++ Fold03.Rep2: df=1.000 
+- Fold02.Rep2: df=2.636 
+Type: EXEC 
++ Fold03.Rep2: df=1.182 
+- Fold02.Rep2: df=2.818 
+Type: EXEC 
++ Fold03.Rep2: df=1.364 
+- Fold02.Rep2: df=3.000 
+Type: EXEC 
++ Fold03.Rep2: df=1.545 
+- Fold03.Rep2: df=1.000 
+Type: EXEC 
++ Fold03.Rep2: df=1.727 
+- Fold03.Rep2: df=1.182 
+Type: EXEC 
++ Fold03.Rep2: df=1.909 
+- Fold03.Rep2: df=1.364 
+Type: EXEC 
++ Fold03.Rep2: df=2.091 
+- Fold03.Rep2: df=1.545 
+Type: EXEC 
++ Fold03.Rep2: df=2.273 
+- Fold03.Rep2: df=1.727 
+Type: EXEC 
++ Fold03.Rep2: df=2.455 
+- Fold03.Rep2: df=1.909 
+Type: EXEC 
++ Fold03.Rep2: df=2.636 
+- Fold03.Rep2: df=2.091 
+Type: EXEC 
++ Fold03.Rep2: df=2.818 
+- Fold03.Rep2: df=2.273 
+Type: EXEC 
++ Fold03.Rep2: df=3.000 
+- Fold03.Rep2: df=2.455 
+Type: EXEC 
++ Fold04.Rep2: df=1.000 
+- Fold03.Rep2: df=2.636 
+Type: EXEC 
++ Fold04.Rep2: df=1.182 
+- Fold03.Rep2: df=2.818 
+Type: EXEC 
++ Fold04.Rep2: df=1.364 
+- Fold03.Rep2: df=3.000 
+Type: EXEC 
++ Fold04.Rep2: df=1.545 
+- Fold04.Rep2: df=1.000 
+Type: EXEC 
++ Fold04.Rep2: df=1.727 
+- Fold04.Rep2: df=1.182 
+Type: EXEC 
++ Fold04.Rep2: df=1.909 
+- Fold04.Rep2: df=1.364 
+Type: EXEC 
++ Fold04.Rep2: df=2.091 
+- Fold04.Rep2: df=1.545 
+Type: EXEC 
++ Fold04.Rep2: df=2.273 
+- Fold04.Rep2: df=1.727 
+Type: EXEC 
++ Fold04.Rep2: df=2.455 
+- Fold04.Rep2: df=1.909 
+Type: EXEC 
++ Fold04.Rep2: df=2.636 
+- Fold04.Rep2: df=2.091 
+Type: EXEC 
++ Fold04.Rep2: df=2.818 
+- Fold04.Rep2: df=2.273 
+Type: EXEC 
++ Fold04.Rep2: df=3.000 
+- Fold04.Rep2: df=2.455 
+Type: EXEC 
++ Fold05.Rep2: df=1.000 
+- Fold04.Rep2: df=2.636 
+Type: EXEC 
++ Fold05.Rep2: df=1.182 
+- Fold04.Rep2: df=2.818 
+Type: EXEC 
++ Fold05.Rep2: df=1.364 
+- Fold05.Rep2: df=1.182 
+Type: EXEC 
++ Fold05.Rep2: df=1.545 
+- Fold04.Rep2: df=3.000 
+Type: EXEC 
++ Fold05.Rep2: df=1.727 
+- Fold05.Rep2: df=1.364 
+Type: EXEC 
++ Fold05.Rep2: df=1.909 
+- Fold05.Rep2: df=1.000 
+Type: EXEC 
++ Fold05.Rep2: df=2.091 
+- Fold05.Rep2: df=1.545 
+Type: EXEC 
++ Fold05.Rep2: df=2.273 
+- Fold05.Rep2: df=1.727 
+Type: EXEC 
++ Fold05.Rep2: df=2.455 
+- Fold05.Rep2: df=1.909 
+Type: EXEC 
++ Fold05.Rep2: df=2.636 
+- Fold05.Rep2: df=2.091 
+Type: EXEC 
++ Fold05.Rep2: df=2.818 
+- Fold05.Rep2: df=2.273 
+Type: EXEC 
++ Fold05.Rep2: df=3.000 
+- Fold05.Rep2: df=2.455 
+Type: EXEC 
++ Fold06.Rep2: df=1.000 
+- Fold05.Rep2: df=2.636 
+Type: EXEC 
++ Fold06.Rep2: df=1.182 
+- Fold05.Rep2: df=2.818 
+Type: EXEC 
++ Fold06.Rep2: df=1.364 
+- Fold05.Rep2: df=3.000 
+Type: EXEC 
++ Fold06.Rep2: df=1.545 
+- Fold06.Rep2: df=1.000 
+Type: EXEC 
++ Fold06.Rep2: df=1.727 
+- Fold06.Rep2: df=1.182 
+Type: EXEC 
++ Fold06.Rep2: df=1.909 
+- Fold06.Rep2: df=1.364 
+Type: EXEC 
++ Fold06.Rep2: df=2.091 
+- Fold06.Rep2: df=1.545 
+Type: EXEC 
++ Fold06.Rep2: df=2.273 
+- Fold06.Rep2: df=1.727 
+Type: EXEC 
++ Fold06.Rep2: df=2.455 
+- Fold06.Rep2: df=1.909 
+Type: EXEC 
++ Fold06.Rep2: df=2.636 
+- Fold06.Rep2: df=2.091 
+Type: EXEC 
++ Fold06.Rep2: df=2.818 
+- Fold06.Rep2: df=2.273 
+Type: EXEC 
++ Fold06.Rep2: df=3.000 
+- Fold06.Rep2: df=2.455 
+Type: EXEC 
++ Fold07.Rep2: df=1.000 
+- Fold06.Rep2: df=2.636 
+Type: EXEC 
++ Fold07.Rep2: df=1.182 
+- Fold06.Rep2: df=2.818 
+Type: EXEC 
++ Fold07.Rep2: df=1.364 
+- Fold07.Rep2: df=1.182 
+Type: EXEC 
++ Fold07.Rep2: df=1.545 
+- Fold06.Rep2: df=3.000 
+Type: EXEC 
++ Fold07.Rep2: df=1.727 
+- Fold07.Rep2: df=1.364 
+Type: EXEC 
++ Fold07.Rep2: df=1.909 
+- Fold07.Rep2: df=1.000 
+Type: EXEC 
++ Fold07.Rep2: df=2.091 
+- Fold07.Rep2: df=1.545 
+Type: EXEC 
++ Fold07.Rep2: df=2.273 
+- Fold07.Rep2: df=1.727 
+Type: EXEC 
++ Fold07.Rep2: df=2.455 
+- Fold07.Rep2: df=1.909 
+Type: EXEC 
++ Fold07.Rep2: df=2.636 
+- Fold07.Rep2: df=2.273 
+Type: EXEC 
++ Fold07.Rep2: df=2.818 
+- Fold07.Rep2: df=2.091 
+Type: EXEC 
++ Fold07.Rep2: df=3.000 
+- Fold07.Rep2: df=2.455 
+Type: EXEC 
++ Fold08.Rep2: df=1.000 
+- Fold07.Rep2: df=2.636 
+Type: EXEC 
++ Fold08.Rep2: df=1.182 
+- Fold07.Rep2: df=2.818 
+Type: EXEC 
++ Fold08.Rep2: df=1.364 
+- Fold07.Rep2: df=3.000 
+Type: EXEC 
++ Fold08.Rep2: df=1.545 
+- Fold08.Rep2: df=1.000 
+Type: EXEC 
++ Fold08.Rep2: df=1.727 
+- Fold08.Rep2: df=1.182 
+Type: EXEC 
++ Fold08.Rep2: df=1.909 
+- Fold08.Rep2: df=1.364 
+Type: EXEC 
++ Fold08.Rep2: df=2.091 
+- Fold08.Rep2: df=1.545 
+Type: EXEC 
++ Fold08.Rep2: df=2.273 
+- Fold08.Rep2: df=1.727 
+Type: EXEC 
++ Fold08.Rep2: df=2.455 
+- Fold08.Rep2: df=1.909 
+Type: EXEC 
++ Fold08.Rep2: df=2.636 
+- Fold08.Rep2: df=2.091 
+Type: EXEC 
++ Fold08.Rep2: df=2.818 
+- Fold08.Rep2: df=2.273 
+Type: EXEC 
++ Fold08.Rep2: df=3.000 
+- Fold08.Rep2: df=2.455 
+Type: EXEC 
++ Fold09.Rep2: df=1.000 
+- Fold08.Rep2: df=2.636 
+Type: EXEC 
++ Fold09.Rep2: df=1.182 
+- Fold08.Rep2: df=2.818 
+Type: EXEC 
++ Fold09.Rep2: df=1.364 
+- Fold09.Rep2: df=1.182 
+Type: EXEC 
++ Fold09.Rep2: df=1.545 
+- Fold08.Rep2: df=3.000 
+Type: EXEC 
++ Fold09.Rep2: df=1.727 
+- Fold09.Rep2: df=1.000 
+Type: EXEC 
++ Fold09.Rep2: df=1.909 
+- Fold09.Rep2: df=1.364 
+Type: EXEC 
++ Fold09.Rep2: df=2.091 
+- Fold09.Rep2: df=1.545 
+Type: EXEC 
++ Fold09.Rep2: df=2.273 
+- Fold09.Rep2: df=1.727 
+Type: EXEC 
++ Fold09.Rep2: df=2.455 
+- Fold09.Rep2: df=1.909 
+Type: EXEC 
++ Fold09.Rep2: df=2.636 
+- Fold09.Rep2: df=2.091 
+Type: EXEC 
++ Fold09.Rep2: df=2.818 
+- Fold09.Rep2: df=2.273 
+Type: EXEC 
++ Fold09.Rep2: df=3.000 
+- Fold09.Rep2: df=2.455 
+Type: EXEC 
++ Fold10.Rep2: df=1.000 
+- Fold09.Rep2: df=2.636 
+Type: EXEC 
++ Fold10.Rep2: df=1.182 
+- Fold09.Rep2: df=2.818 
+Type: EXEC 
++ Fold10.Rep2: df=1.364 
+- Fold09.Rep2: df=3.000 
+Type: EXEC 
++ Fold10.Rep2: df=1.545 
+- Fold10.Rep2: df=1.182 
+Type: EXEC 
++ Fold10.Rep2: df=1.727 
+- Fold10.Rep2: df=1.364 
+Type: EXEC 
++ Fold10.Rep2: df=1.909 
+- Fold10.Rep2: df=1.545 
+Type: EXEC 
++ Fold10.Rep2: df=2.091 
+- Fold10.Rep2: df=1.000 
+Type: EXEC 
++ Fold10.Rep2: df=2.273 
+- Fold10.Rep2: df=1.727 
+Type: EXEC 
++ Fold10.Rep2: df=2.455 
+- Fold10.Rep2: df=1.909 
+Type: EXEC 
++ Fold10.Rep2: df=2.636 
+- Fold10.Rep2: df=2.091 
+Type: EXEC 
++ Fold10.Rep2: df=2.818 
+- Fold10.Rep2: df=2.273 
+Type: EXEC 
++ Fold10.Rep2: df=3.000 
+- Fold10.Rep2: df=2.455 
+- Fold10.Rep2: df=2.636 
+- Fold10.Rep2: df=2.818 
+- Fold10.Rep2: df=3.000 
+Aggregating results
+Selecting tuning parameters
+Fitting df = 1.91 on full training set
+[1] "gamSpline : 0.815"
+[1] "done"
+Loading required package: kernlab
+Type: EXEC 
+loaded caret and set parent environment
+Type: EXEC 
+loaded caret and set parent environment
+Type: EXEC 
+loaded caret and set parent environment
+Type: EXEC 
+loaded caret and set parent environment
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
++ Fold02.Rep1: parameter=none 
++ Fold01.Rep1: parameter=none 
++ Fold03.Rep1: parameter=none 
++ Fold04.Rep1: parameter=none 
+- Fold03.Rep1: parameter=none 
+Type: EXEC 
++ Fold05.Rep1: parameter=none 
+- Fold04.Rep1: parameter=none 
+Type: EXEC 
++ Fold06.Rep1: parameter=none 
+- Fold01.Rep1: parameter=none 
+Type: EXEC 
++ Fold07.Rep1: parameter=none 
+- Fold02.Rep1: parameter=none 
+Type: EXEC 
++ Fold08.Rep1: parameter=none 
+- Fold06.Rep1: parameter=none 
+Type: EXEC 
++ Fold09.Rep1: parameter=none 
+- Fold05.Rep1: parameter=none 
+Type: EXEC 
++ Fold10.Rep1: parameter=none 
+- Fold08.Rep1: parameter=none 
+Type: EXEC 
++ Fold01.Rep2: parameter=none 
+- Fold07.Rep1: parameter=none 
+Type: EXEC 
++ Fold02.Rep2: parameter=none 
+- Fold10.Rep1: parameter=none 
+Type: EXEC 
++ Fold03.Rep2: parameter=none 
+- Fold01.Rep2: parameter=none 
+Type: EXEC 
++ Fold04.Rep2: parameter=none 
+- Fold09.Rep1: parameter=none 
+Type: EXEC 
++ Fold05.Rep2: parameter=none 
+- Fold02.Rep2: parameter=none 
+Type: EXEC 
++ Fold06.Rep2: parameter=none 
+- Fold03.Rep2: parameter=none 
+Type: EXEC 
++ Fold07.Rep2: parameter=none 
+- Fold04.Rep2: parameter=none 
+Type: EXEC 
++ Fold08.Rep2: parameter=none 
+- Fold05.Rep2: parameter=none 
+Type: EXEC 
++ Fold09.Rep2: parameter=none 
+- Fold08.Rep2: parameter=none 
+Type: EXEC 
++ Fold10.Rep2: parameter=none 
+- Fold06.Rep2: parameter=none 
+- Fold09.Rep2: parameter=none 
+- Fold07.Rep2: parameter=none 
+- Fold10.Rep2: parameter=none 
+Aggregating results
+Fitting final model on full training set
+[1] "gaussprLinear : 0.805"
+[1] "done"
+Type: EXEC 
+loaded caret and set parent environment
+Type: EXEC 
+loaded caret and set parent environment
+Type: EXEC 
+loaded caret and set parent environment
+Type: EXEC 
+loaded caret and set parent environment
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
++ Fold01.Rep1: degree=1, scale=1e-03 
+
++ Fold01.Rep1: degree=3, scale=1e-03 
+
+- Fold01.Rep1: degree=3, scale=1e-03 
+Type: EXEC 
++ Fold01.Rep1: degree=2, scale=1e-02 
+- Fold01.Rep1: degree=1, scale=1e-02 
+Type: EXEC 
++ Fold01.Rep1: degree=3, scale=1e-02 
+- Fold01.Rep1: degree=2, scale=1e-03 
+Type: EXEC 
++ Fold01.Rep1: degree=1, scale=1e-01 
+- Fold01.Rep1: degree=1, scale=1e-03 
+Type: EXEC 
++ Fold01.Rep1: degree=2, scale=1e-01 
+- Fold01.Rep1: degree=1, scale=1e-01 
+Type: EXEC 
++ Fold01.Rep1: degree=3, scale=1e-01 
+- Fold01.Rep1: degree=2, scale=1e-01 
+Type: EXEC 
++ Fold01.Rep1: degree=1, scale=1e+00 
+- Fold01.Rep1: degree=2, scale=1e-02 
+Type: EXEC 
++ Fold01.Rep1: degree=2, scale=1e+00 
+- Fold01.Rep1: degree=3, scale=1e-01 
+Type: EXEC 
++ Fold01.Rep1: degree=3, scale=1e+00 
+model fit failed for Fold01.Rep1: degree=3, scale=1e+00 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=3, scale=1e+00 
+Type: EXEC 
++ Fold01.Rep1: degree=1, scale=1e+01 
+- Fold01.Rep1: degree=3, scale=1e-02 
+Type: EXEC 
++ Fold01.Rep1: degree=2, scale=1e+01 
+model fit failed for Fold01.Rep1: degree=2, scale=1e+01 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=2, scale=1e+01 
+Type: EXEC 
++ Fold01.Rep1: degree=3, scale=1e+01 
+model fit failed for Fold01.Rep1: degree=3, scale=1e+01 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=3, scale=1e+01 
+Type: EXEC 
++ Fold01.Rep1: degree=1, scale=1e+02 
+model fit failed for Fold01.Rep1: degree=1, scale=1e+02 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=1, scale=1e+02 
+Type: EXEC 
++ Fold01.Rep1: degree=2, scale=1e+02 
+model fit failed for Fold01.Rep1: degree=2, scale=1e+02 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=2, scale=1e+02 
+Type: EXEC 
++ Fold01.Rep1: degree=3, scale=1e+02 
+- Fold01.Rep1: degree=3, scale=1e+02 
+Type: EXEC 
++ Fold01.Rep1: degree=1, scale=1e+03 
+- Fold01.Rep1: degree=1, scale=1e+00 
+Type: EXEC 
++ Fold01.Rep1: degree=2, scale=1e+03 
+model fit failed for Fold01.Rep1: degree=2, scale=1e+03 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=2, scale=1e+03 
+Type: EXEC 
++ Fold01.Rep1: degree=3, scale=1e+03 
+model fit failed for Fold01.Rep1: degree=3, scale=1e+03 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=3, scale=1e+03 
+Type: EXEC 
++ Fold01.Rep1: degree=1, scale=1e+04 
+model fit failed for Fold01.Rep1: degree=1, scale=1e+04 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=1, scale=1e+04 
+Type: EXEC 
++ Fold01.Rep1: degree=2, scale=1e+04 
+model fit failed for Fold01.Rep1: degree=2, scale=1e+04 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=2, scale=1e+04 
+Type: EXEC 
++ Fold01.Rep1: degree=3, scale=1e+04 
+- Fold01.Rep1: degree=2, scale=1e+00 
+Type: EXEC 
++ Fold01.Rep1: degree=1, scale=1e+05 
+- Fold01.Rep1: degree=3, scale=1e+04 
+Type: EXEC 
++ Fold01.Rep1: degree=2, scale=1e+05 
+model fit failed for Fold01.Rep1: degree=1, scale=1e+05 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=1, scale=1e+05 
+Type: EXEC 
++ Fold01.Rep1: degree=3, scale=1e+05 
+model fit failed for Fold01.Rep1: degree=2, scale=1e+05 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=2, scale=1e+05 
+Type: EXEC 
++ Fold01.Rep1: degree=1, scale=1e+06 
+- Fold01.Rep1: degree=3, scale=1e+05 
+Type: EXEC 
++ Fold01.Rep1: degree=2, scale=1e+06 
+model fit failed for Fold01.Rep1: degree=1, scale=1e+06 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=1, scale=1e+06 
+Type: EXEC 
++ Fold01.Rep1: degree=3, scale=1e+06 
+model fit failed for Fold01.Rep1: degree=2, scale=1e+06 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=2, scale=1e+06 
+Type: EXEC 
++ Fold01.Rep1: degree=1, scale=1e+07 
+model fit failed for Fold01.Rep1: degree=3, scale=1e+06 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=3, scale=1e+06 
+Type: EXEC 
++ Fold01.Rep1: degree=2, scale=1e+07 
+model fit failed for Fold01.Rep1: degree=1, scale=1e+07 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=1, scale=1e+07 
+Type: EXEC 
++ Fold01.Rep1: degree=3, scale=1e+07 
+model fit failed for Fold01.Rep1: degree=2, scale=1e+07 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=2, scale=1e+07 
+Type: EXEC 
++ Fold01.Rep1: degree=1, scale=1e+08 
+- Fold01.Rep1: degree=3, scale=1e+07 
+Type: EXEC 
++ Fold01.Rep1: degree=2, scale=1e+08 
+model fit failed for Fold01.Rep1: degree=2, scale=1e+08 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=2, scale=1e+08 
+Type: EXEC 
++ Fold01.Rep1: degree=3, scale=1e+08 
+model fit failed for Fold01.Rep1: degree=1, scale=1e+08 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold01.Rep1: degree=1, scale=1e+08 
+Type: EXEC 
++ Fold02.Rep1: degree=1, scale=1e-03 
+- Fold01.Rep1: degree=3, scale=1e+08 
+Type: EXEC 
++ Fold02.Rep1: degree=2, scale=1e-03 
+- Fold02.Rep1: degree=1, scale=1e-03 
+Type: EXEC 
++ Fold02.Rep1: degree=3, scale=1e-03 
+- Fold02.Rep1: degree=2, scale=1e-03 
+Type: EXEC 
++ Fold02.Rep1: degree=1, scale=1e-02 
+- Fold02.Rep1: degree=1, scale=1e-02 
+Type: EXEC 
++ Fold02.Rep1: degree=2, scale=1e-02 
+- Fold02.Rep1: degree=3, scale=1e-03 
+Type: EXEC 
++ Fold02.Rep1: degree=3, scale=1e-02 
+- Fold02.Rep1: degree=2, scale=1e-02 
+Type: EXEC 
++ Fold02.Rep1: degree=1, scale=1e-01 
+- Fold02.Rep1: degree=3, scale=1e-02 
+Type: EXEC 
++ Fold02.Rep1: degree=2, scale=1e-01 
+- Fold02.Rep1: degree=1, scale=1e-01 
+Type: EXEC 
++ Fold02.Rep1: degree=3, scale=1e-01 
+- Fold02.Rep1: degree=3, scale=1e-01 
+Type: EXEC 
++ Fold02.Rep1: degree=1, scale=1e+00 
+- Fold02.Rep1: degree=2, scale=1e-01 
+Type: EXEC 
++ Fold02.Rep1: degree=2, scale=1e+00 
+- Fold02.Rep1: degree=1, scale=1e+00 
+Type: EXEC 
++ Fold02.Rep1: degree=3, scale=1e+00 
+model fit failed for Fold02.Rep1: degree=3, scale=1e+00 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold02.Rep1: degree=3, scale=1e+00 
+Type: EXEC 
++ Fold02.Rep1: degree=1, scale=1e+01 
+- Fold02.Rep1: degree=2, scale=1e+00 
+Type: EXEC 
++ Fold02.Rep1: degree=2, scale=1e+01 
+model fit failed for Fold02.Rep1: degree=2, scale=1e+01 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold02.Rep1: degree=2, scale=1e+01 
+Type: EXEC 
++ Fold02.Rep1: degree=3, scale=1e+01 
+- Fold02.Rep1: degree=3, scale=1e+01 
+Type: EXEC 
++ Fold02.Rep1: degree=1, scale=1e+02 
+- Fold01.Rep1: degree=1, scale=1e+01 
+Type: EXEC 
++ Fold02.Rep1: degree=2, scale=1e+02 
+model fit failed for Fold02.Rep1: degree=2, scale=1e+02 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold02.Rep1: degree=2, scale=1e+02 
+Type: EXEC 
++ Fold02.Rep1: degree=3, scale=1e+02 
+model fit failed for Fold02.Rep1: degree=3, scale=1e+02 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold02.Rep1: degree=3, scale=1e+02 
+Type: EXEC 
++ Fold02.Rep1: degree=1, scale=1e+03 
+- Fold02.Rep1: degree=1, scale=1e+01 
+Type: EXEC 
++ Fold02.Rep1: degree=2, scale=1e+03 
+model fit failed for Fold02.Rep1: degree=2, scale=1e+03 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold02.Rep1: degree=2, scale=1e+03 
+Type: EXEC 
++ Fold02.Rep1: degree=3, scale=1e+03 
+model fit failed for Fold02.Rep1: degree=3, scale=1e+03 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold02.Rep1: degree=3, scale=1e+03 
+Type: EXEC 
++ Fold02.Rep1: degree=1, scale=1e+04 
+model fit failed for Fold02.Rep1: degree=1, scale=1e+04 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold02.Rep1: degree=1, scale=1e+04 
+Type: EXEC 
++ Fold02.Rep1: degree=2, scale=1e+04 
+model fit failed for Fold02.Rep1: degree=2, scale=1e+04 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold02.Rep1: degree=2, scale=1e+04 
+Type: EXEC 
++ Fold02.Rep1: degree=3, scale=1e+04 
+- Fold02.Rep1: degree=3, scale=1e+04 
+Type: EXEC 
++ Fold02.Rep1: degree=1, scale=1e+05 
+model fit failed for Fold02.Rep1: degree=1, scale=1e+05 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold02.Rep1: degree=1, scale=1e+05 
+Type: EXEC 
++ Fold02.Rep1: degree=2, scale=1e+05 
+model fit failed for Fold02.Rep1: degree=2, scale=1e+05 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold02.Rep1: degree=2, scale=1e+05 
+Type: EXEC 
++ Fold02.Rep1: degree=3, scale=1e+05 
+- Fold02.Rep1: degree=3, scale=1e+05 
+Type: EXEC 
++ Fold02.Rep1: degree=1, scale=1e+06 
+model fit failed for Fold02.Rep1: degree=1, scale=1e+06 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold02.Rep1: degree=1, scale=1e+06 
+Type: EXEC 
++ Fold02.Rep1: degree=2, scale=1e+06 
+model fit failed for Fold02.Rep1: degree=2, scale=1e+06 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold02.Rep1: degree=2, scale=1e+06 
+Type: EXEC 
++ Fold02.Rep1: degree=3, scale=1e+06 
+- Fold02.Rep1: degree=3, scale=1e+06 
+Type: EXEC 
++ Fold02.Rep1: degree=1, scale=1e+07 
+model fit failed for Fold02.Rep1: degree=1, scale=1e+07 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold02.Rep1: degree=1, scale=1e+07 
+Type: EXEC 
++ Fold02.Rep1: degree=2, scale=1e+07 
+model fit failed for Fold02.Rep1: degree=2, scale=1e+07 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold02.Rep1: degree=2, scale=1e+07 
+Type: EXEC 
++ Fold02.Rep1: degree=3, scale=1e+07 
+- Fold02.Rep1: degree=3, scale=1e+07 
+Type: EXEC 
++ Fold02.Rep1: degree=1, scale=1e+08 
+model fit failed for Fold02.Rep1: degree=1, scale=1e+08 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold02.Rep1: degree=1, scale=1e+08 
+Type: EXEC 
++ Fold02.Rep1: degree=2, scale=1e+08 
+model fit failed for Fold02.Rep1: degree=2, scale=1e+08 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold02.Rep1: degree=2, scale=1e+08 
+Type: EXEC 
++ Fold02.Rep1: degree=3, scale=1e+08 
+- Fold02.Rep1: degree=3, scale=1e+08 
+Type: EXEC 
++ Fold03.Rep1: degree=1, scale=1e-03 
+- Fold03.Rep1: degree=1, scale=1e-03 
+Type: EXEC 
++ Fold03.Rep1: degree=2, scale=1e-03 
+- Fold03.Rep1: degree=2, scale=1e-03 
+Type: EXEC 
++ Fold03.Rep1: degree=3, scale=1e-03 
+- Fold03.Rep1: degree=3, scale=1e-03 
+Type: EXEC 
++ Fold03.Rep1: degree=1, scale=1e-02 
+- Fold03.Rep1: degree=1, scale=1e-02 
+Type: EXEC 
++ Fold03.Rep1: degree=2, scale=1e-02 
+- Fold03.Rep1: degree=2, scale=1e-02 
+Type: EXEC 
++ Fold03.Rep1: degree=3, scale=1e-02 
+- Fold03.Rep1: degree=3, scale=1e-02 
+Type: EXEC 
++ Fold03.Rep1: degree=1, scale=1e-01 
+- Fold03.Rep1: degree=1, scale=1e-01 
+Type: EXEC 
++ Fold03.Rep1: degree=2, scale=1e-01 
+- Fold03.Rep1: degree=2, scale=1e-01 
+Type: EXEC 
++ Fold03.Rep1: degree=3, scale=1e-01 
+- Fold03.Rep1: degree=3, scale=1e-01 
+Type: EXEC 
++ Fold03.Rep1: degree=1, scale=1e+00 
+- Fold03.Rep1: degree=1, scale=1e+00 
+Type: EXEC 
++ Fold03.Rep1: degree=2, scale=1e+00 
+- Fold03.Rep1: degree=2, scale=1e+00 
+Type: EXEC 
++ Fold03.Rep1: degree=3, scale=1e+00 
+model fit failed for Fold03.Rep1: degree=3, scale=1e+00 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold03.Rep1: degree=3, scale=1e+00 
+Type: EXEC 
++ Fold03.Rep1: degree=1, scale=1e+01 
+- Fold03.Rep1: degree=1, scale=1e+01 
+Type: EXEC 
++ Fold03.Rep1: degree=2, scale=1e+01 
+model fit failed for Fold03.Rep1: degree=2, scale=1e+01 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold03.Rep1: degree=2, scale=1e+01 
+Type: EXEC 
++ Fold03.Rep1: degree=3, scale=1e+01 
+- Fold03.Rep1: degree=3, scale=1e+01 
+Type: EXEC 
++ Fold03.Rep1: degree=1, scale=1e+02 
+- Fold02.Rep1: degree=1, scale=1e+02 
+Type: EXEC 
++ Fold03.Rep1: degree=2, scale=1e+02 
+model fit failed for Fold03.Rep1: degree=2, scale=1e+02 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold03.Rep1: degree=2, scale=1e+02 
+Type: EXEC 
++ Fold03.Rep1: degree=3, scale=1e+02 
+- Fold03.Rep1: degree=3, scale=1e+02 
+Type: EXEC 
++ Fold03.Rep1: degree=1, scale=1e+03 
+- Fold03.Rep1: degree=1, scale=1e+02 
+Type: EXEC 
++ Fold03.Rep1: degree=2, scale=1e+03 
+model fit failed for Fold03.Rep1: degree=2, scale=1e+03 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold03.Rep1: degree=2, scale=1e+03 
+Type: EXEC 
++ Fold03.Rep1: degree=3, scale=1e+03 
+model fit failed for Fold03.Rep1: degree=3, scale=1e+03 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold03.Rep1: degree=3, scale=1e+03 
+Type: EXEC 
++ Fold03.Rep1: degree=1, scale=1e+04 
+- Fold01.Rep1: degree=1, scale=1e+03 
+Type: EXEC 
++ Fold03.Rep1: degree=2, scale=1e+04 
+model fit failed for Fold03.Rep1: degree=2, scale=1e+04 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold03.Rep1: degree=2, scale=1e+04 
+Type: EXEC 
++ Fold03.Rep1: degree=3, scale=1e+04 
+model fit failed for Fold03.Rep1: degree=3, scale=1e+04 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold03.Rep1: degree=3, scale=1e+04 
+Type: EXEC 
++ Fold03.Rep1: degree=1, scale=1e+05 
+model fit failed for Fold03.Rep1: degree=1, scale=1e+05 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold03.Rep1: degree=1, scale=1e+05 
+Type: EXEC 
++ Fold03.Rep1: degree=2, scale=1e+05 
+model fit failed for Fold03.Rep1: degree=2, scale=1e+05 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold03.Rep1: degree=2, scale=1e+05 
+Type: EXEC 
++ Fold03.Rep1: degree=3, scale=1e+05 
+model fit failed for Fold03.Rep1: degree=3, scale=1e+05 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold03.Rep1: degree=3, scale=1e+05 
+Type: EXEC 
++ Fold03.Rep1: degree=1, scale=1e+06 
+model fit failed for Fold03.Rep1: degree=1, scale=1e+06 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold03.Rep1: degree=1, scale=1e+06 
+Type: EXEC 
++ Fold03.Rep1: degree=2, scale=1e+06 
+model fit failed for Fold03.Rep1: degree=2, scale=1e+06 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold03.Rep1: degree=2, scale=1e+06 
+Type: EXEC 
++ Fold03.Rep1: degree=3, scale=1e+06 
+- Fold03.Rep1: degree=3, scale=1e+06 
+Type: EXEC 
++ Fold03.Rep1: degree=1, scale=1e+07 
+model fit failed for Fold03.Rep1: degree=1, scale=1e+07 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold03.Rep1: degree=1, scale=1e+07 
+Type: EXEC 
++ Fold03.Rep1: degree=2, scale=1e+07 
+model fit failed for Fold03.Rep1: degree=2, scale=1e+07 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold03.Rep1: degree=2, scale=1e+07 
+Type: EXEC 
++ Fold03.Rep1: degree=3, scale=1e+07 
+- Fold03.Rep1: degree=3, scale=1e+07 
+Type: EXEC 
++ Fold03.Rep1: degree=1, scale=1e+08 
+model fit failed for Fold03.Rep1: degree=1, scale=1e+08 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold03.Rep1: degree=1, scale=1e+08 
+Type: EXEC 
++ Fold03.Rep1: degree=2, scale=1e+08 
+model fit failed for Fold03.Rep1: degree=2, scale=1e+08 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold03.Rep1: degree=2, scale=1e+08 
+Type: EXEC 
++ Fold03.Rep1: degree=3, scale=1e+08 
+- Fold03.Rep1: degree=3, scale=1e+08 
+Type: EXEC 
++ Fold04.Rep1: degree=1, scale=1e-03 
+- Fold04.Rep1: degree=1, scale=1e-03 
+Type: EXEC 
++ Fold04.Rep1: degree=2, scale=1e-03 
+- Fold04.Rep1: degree=2, scale=1e-03 
+Type: EXEC 
++ Fold04.Rep1: degree=3, scale=1e-03 
+- Fold04.Rep1: degree=3, scale=1e-03 
+Type: EXEC 
++ Fold04.Rep1: degree=1, scale=1e-02 
+- Fold04.Rep1: degree=1, scale=1e-02 
+Type: EXEC 
++ Fold04.Rep1: degree=2, scale=1e-02 
+- Fold04.Rep1: degree=2, scale=1e-02 
+Type: EXEC 
++ Fold04.Rep1: degree=3, scale=1e-02 
+- Fold04.Rep1: degree=3, scale=1e-02 
+Type: EXEC 
++ Fold04.Rep1: degree=1, scale=1e-01 
+- Fold04.Rep1: degree=1, scale=1e-01 
+Type: EXEC 
++ Fold04.Rep1: degree=2, scale=1e-01 
+- Fold04.Rep1: degree=2, scale=1e-01 
+Type: EXEC 
++ Fold04.Rep1: degree=3, scale=1e-01 
+- Fold04.Rep1: degree=3, scale=1e-01 
+Type: EXEC 
++ Fold04.Rep1: degree=1, scale=1e+00 
+- Fold04.Rep1: degree=1, scale=1e+00 
+Type: EXEC 
++ Fold04.Rep1: degree=2, scale=1e+00 
+- Fold04.Rep1: degree=2, scale=1e+00 
+Type: EXEC 
++ Fold04.Rep1: degree=3, scale=1e+00 
+model fit failed for Fold04.Rep1: degree=3, scale=1e+00 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=3, scale=1e+00 
+Type: EXEC 
++ Fold04.Rep1: degree=1, scale=1e+01 
+- Fold04.Rep1: degree=1, scale=1e+01 
+Type: EXEC 
++ Fold04.Rep1: degree=2, scale=1e+01 
+model fit failed for Fold04.Rep1: degree=2, scale=1e+01 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=2, scale=1e+01 
+Type: EXEC 
++ Fold04.Rep1: degree=3, scale=1e+01 
+model fit failed for Fold04.Rep1: degree=3, scale=1e+01 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=3, scale=1e+01 
+Type: EXEC 
++ Fold04.Rep1: degree=1, scale=1e+02 
+- Fold04.Rep1: degree=1, scale=1e+02 
+Type: EXEC 
++ Fold04.Rep1: degree=2, scale=1e+02 
+model fit failed for Fold04.Rep1: degree=2, scale=1e+02 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=2, scale=1e+02 
+Type: EXEC 
++ Fold04.Rep1: degree=3, scale=1e+02 
+model fit failed for Fold04.Rep1: degree=3, scale=1e+02 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=3, scale=1e+02 
+Type: EXEC 
++ Fold04.Rep1: degree=1, scale=1e+03 
+- Fold02.Rep1: degree=1, scale=1e+03 
+Type: EXEC 
++ Fold04.Rep1: degree=2, scale=1e+03 
+model fit failed for Fold04.Rep1: degree=2, scale=1e+03 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=2, scale=1e+03 
+Type: EXEC 
++ Fold04.Rep1: degree=3, scale=1e+03 
+model fit failed for Fold04.Rep1: degree=3, scale=1e+03 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=3, scale=1e+03 
+Type: EXEC 
++ Fold04.Rep1: degree=1, scale=1e+04 
+model fit failed for Fold04.Rep1: degree=1, scale=1e+04 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=1, scale=1e+04 
+Type: EXEC 
++ Fold04.Rep1: degree=2, scale=1e+04 
+model fit failed for Fold04.Rep1: degree=2, scale=1e+04 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=2, scale=1e+04 
+Type: EXEC 
++ Fold04.Rep1: degree=3, scale=1e+04 
+model fit failed for Fold04.Rep1: degree=3, scale=1e+04 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=3, scale=1e+04 
+Type: EXEC 
++ Fold04.Rep1: degree=1, scale=1e+05 
+model fit failed for Fold04.Rep1: degree=1, scale=1e+05 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=1, scale=1e+05 
+Type: EXEC 
++ Fold04.Rep1: degree=2, scale=1e+05 
+model fit failed for Fold04.Rep1: degree=2, scale=1e+05 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=2, scale=1e+05 
+Type: EXEC 
++ Fold04.Rep1: degree=3, scale=1e+05 
+model fit failed for Fold04.Rep1: degree=3, scale=1e+05 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=3, scale=1e+05 
+Type: EXEC 
++ Fold04.Rep1: degree=1, scale=1e+06 
+model fit failed for Fold04.Rep1: degree=1, scale=1e+06 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=1, scale=1e+06 
+Type: EXEC 
++ Fold04.Rep1: degree=2, scale=1e+06 
+model fit failed for Fold04.Rep1: degree=2, scale=1e+06 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=2, scale=1e+06 
+Type: EXEC 
++ Fold04.Rep1: degree=3, scale=1e+06 
+model fit failed for Fold04.Rep1: degree=3, scale=1e+06 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=3, scale=1e+06 
+Type: EXEC 
++ Fold04.Rep1: degree=1, scale=1e+07 
+model fit failed for Fold04.Rep1: degree=1, scale=1e+07 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=1, scale=1e+07 
+Type: EXEC 
++ Fold04.Rep1: degree=2, scale=1e+07 
+model fit failed for Fold04.Rep1: degree=2, scale=1e+07 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=2, scale=1e+07 
+Type: EXEC 
++ Fold04.Rep1: degree=3, scale=1e+07 
+model fit failed for Fold04.Rep1: degree=3, scale=1e+07 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=3, scale=1e+07 
+Type: EXEC 
++ Fold04.Rep1: degree=1, scale=1e+08 
+model fit failed for Fold04.Rep1: degree=1, scale=1e+08 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=1, scale=1e+08 
+Type: EXEC 
++ Fold04.Rep1: degree=2, scale=1e+08 
+model fit failed for Fold04.Rep1: degree=2, scale=1e+08 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=2, scale=1e+08 
+Type: EXEC 
++ Fold04.Rep1: degree=3, scale=1e+08 
+model fit failed for Fold04.Rep1: degree=3, scale=1e+08 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold04.Rep1: degree=3, scale=1e+08 
+Type: EXEC 
++ Fold05.Rep1: degree=1, scale=1e-03 
+- Fold05.Rep1: degree=1, scale=1e-03 
+Type: EXEC 
++ Fold05.Rep1: degree=2, scale=1e-03 
+- Fold05.Rep1: degree=2, scale=1e-03 
+Type: EXEC 
++ Fold05.Rep1: degree=3, scale=1e-03 
+- Fold05.Rep1: degree=3, scale=1e-03 
+Type: EXEC 
++ Fold05.Rep1: degree=1, scale=1e-02 
+- Fold05.Rep1: degree=1, scale=1e-02 
+Type: EXEC 
++ Fold05.Rep1: degree=2, scale=1e-02 
+- Fold05.Rep1: degree=2, scale=1e-02 
+Type: EXEC 
++ Fold05.Rep1: degree=3, scale=1e-02 
+- Fold05.Rep1: degree=3, scale=1e-02 
+Type: EXEC 
++ Fold05.Rep1: degree=1, scale=1e-01 
+- Fold05.Rep1: degree=1, scale=1e-01 
+Type: EXEC 
++ Fold05.Rep1: degree=2, scale=1e-01 
+- Fold05.Rep1: degree=2, scale=1e-01 
+Type: EXEC 
++ Fold05.Rep1: degree=3, scale=1e-01 
+- Fold05.Rep1: degree=3, scale=1e-01 
+Type: EXEC 
++ Fold05.Rep1: degree=1, scale=1e+00 
+- Fold05.Rep1: degree=1, scale=1e+00 
+Type: EXEC 
++ Fold05.Rep1: degree=2, scale=1e+00 
+- Fold05.Rep1: degree=2, scale=1e+00 
+Type: EXEC 
++ Fold05.Rep1: degree=3, scale=1e+00 
+model fit failed for Fold05.Rep1: degree=3, scale=1e+00 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold05.Rep1: degree=3, scale=1e+00 
+Type: EXEC 
++ Fold05.Rep1: degree=1, scale=1e+01 
+- Fold03.Rep1: degree=1, scale=1e+03 
+Type: EXEC 
++ Fold05.Rep1: degree=2, scale=1e+01 
+model fit failed for Fold05.Rep1: degree=2, scale=1e+01 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold05.Rep1: degree=2, scale=1e+01 
+Type: EXEC 
++ Fold05.Rep1: degree=3, scale=1e+01 
+- Fold05.Rep1: degree=3, scale=1e+01 
+Type: EXEC 
++ Fold05.Rep1: degree=1, scale=1e+02 
+model fit failed for Fold05.Rep1: degree=1, scale=1e+02 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold05.Rep1: degree=1, scale=1e+02 
+Type: EXEC 
++ Fold05.Rep1: degree=2, scale=1e+02 
+model fit failed for Fold05.Rep1: degree=2, scale=1e+02 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold05.Rep1: degree=2, scale=1e+02 
+Type: EXEC 
++ Fold05.Rep1: degree=3, scale=1e+02 
+- Fold05.Rep1: degree=3, scale=1e+02 
+Type: EXEC 
++ Fold05.Rep1: degree=1, scale=1e+03 
+- Fold04.Rep1: degree=1, scale=1e+03 
+Type: EXEC 
++ Fold05.Rep1: degree=2, scale=1e+03 
+model fit failed for Fold05.Rep1: degree=2, scale=1e+03 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold05.Rep1: degree=2, scale=1e+03 
+Type: EXEC 
++ Fold05.Rep1: degree=3, scale=1e+03 
+- Fold05.Rep1: degree=3, scale=1e+03 
+Type: EXEC 
++ Fold05.Rep1: degree=1, scale=1e+04 
+- Fold05.Rep1: degree=1, scale=1e+03 
+Type: EXEC 
++ Fold05.Rep1: degree=2, scale=1e+04 
+model fit failed for Fold05.Rep1: degree=2, scale=1e+04 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold05.Rep1: degree=2, scale=1e+04 
+Type: EXEC 
++ Fold05.Rep1: degree=3, scale=1e+04 
+model fit failed for Fold05.Rep1: degree=3, scale=1e+04 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold05.Rep1: degree=3, scale=1e+04 
+Type: EXEC 
++ Fold05.Rep1: degree=1, scale=1e+05 
+model fit failed for Fold05.Rep1: degree=1, scale=1e+05 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold05.Rep1: degree=1, scale=1e+05 
+Type: EXEC 
++ Fold05.Rep1: degree=2, scale=1e+05 
+model fit failed for Fold05.Rep1: degree=2, scale=1e+05 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold05.Rep1: degree=2, scale=1e+05 
+Type: EXEC 
++ Fold05.Rep1: degree=3, scale=1e+05 
+- Fold05.Rep1: degree=3, scale=1e+05 
+Type: EXEC 
++ Fold05.Rep1: degree=1, scale=1e+06 
+model fit failed for Fold05.Rep1: degree=1, scale=1e+06 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold05.Rep1: degree=1, scale=1e+06 
+Type: EXEC 
++ Fold05.Rep1: degree=2, scale=1e+06 
+model fit failed for Fold05.Rep1: degree=2, scale=1e+06 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold05.Rep1: degree=2, scale=1e+06 
+Type: EXEC 
++ Fold05.Rep1: degree=3, scale=1e+06 
+model fit failed for Fold05.Rep1: degree=3, scale=1e+06 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold05.Rep1: degree=3, scale=1e+06 
+Type: EXEC 
++ Fold05.Rep1: degree=1, scale=1e+07 
+model fit failed for Fold05.Rep1: degree=1, scale=1e+07 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold05.Rep1: degree=1, scale=1e+07 
+Type: EXEC 
++ Fold05.Rep1: degree=2, scale=1e+07 
+model fit failed for Fold05.Rep1: degree=2, scale=1e+07 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold05.Rep1: degree=2, scale=1e+07 
+Type: EXEC 
++ Fold05.Rep1: degree=3, scale=1e+07 
+model fit failed for Fold05.Rep1: degree=3, scale=1e+07 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold05.Rep1: degree=3, scale=1e+07 
+Type: EXEC 
++ Fold05.Rep1: degree=1, scale=1e+08 
+model fit failed for Fold05.Rep1: degree=1, scale=1e+08 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold05.Rep1: degree=1, scale=1e+08 
+Type: EXEC 
++ Fold05.Rep1: degree=2, scale=1e+08 
+model fit failed for Fold05.Rep1: degree=2, scale=1e+08 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold05.Rep1: degree=2, scale=1e+08 
+Type: EXEC 
++ Fold05.Rep1: degree=3, scale=1e+08 
+- Fold05.Rep1: degree=3, scale=1e+08 
+Type: EXEC 
++ Fold06.Rep1: degree=1, scale=1e-03 
+- Fold06.Rep1: degree=1, scale=1e-03 
+Type: EXEC 
++ Fold06.Rep1: degree=2, scale=1e-03 
+- Fold06.Rep1: degree=2, scale=1e-03 
+Type: EXEC 
++ Fold06.Rep1: degree=3, scale=1e-03 
+- Fold06.Rep1: degree=3, scale=1e-03 
+Type: EXEC 
++ Fold06.Rep1: degree=1, scale=1e-02 
+- Fold06.Rep1: degree=1, scale=1e-02 
+Type: EXEC 
++ Fold06.Rep1: degree=2, scale=1e-02 
+- Fold06.Rep1: degree=2, scale=1e-02 
+Type: EXEC 
++ Fold06.Rep1: degree=3, scale=1e-02 
+- Fold06.Rep1: degree=3, scale=1e-02 
+Type: EXEC 
++ Fold06.Rep1: degree=1, scale=1e-01 
+- Fold06.Rep1: degree=1, scale=1e-01 
+Type: EXEC 
++ Fold06.Rep1: degree=2, scale=1e-01 
+- Fold06.Rep1: degree=2, scale=1e-01 
+Type: EXEC 
++ Fold06.Rep1: degree=3, scale=1e-01 
+- Fold06.Rep1: degree=3, scale=1e-01 
+Type: EXEC 
++ Fold06.Rep1: degree=1, scale=1e+00 
+- Fold06.Rep1: degree=1, scale=1e+00 
+Type: EXEC 
++ Fold06.Rep1: degree=2, scale=1e+00 
+- Fold06.Rep1: degree=2, scale=1e+00 
+Type: EXEC 
++ Fold06.Rep1: degree=3, scale=1e+00 
+model fit failed for Fold06.Rep1: degree=3, scale=1e+00 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold06.Rep1: degree=3, scale=1e+00 
+Type: EXEC 
++ Fold06.Rep1: degree=1, scale=1e+01 
+- Fold06.Rep1: degree=1, scale=1e+01 
+Type: EXEC 
++ Fold06.Rep1: degree=2, scale=1e+01 
+model fit failed for Fold06.Rep1: degree=2, scale=1e+01 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold06.Rep1: degree=2, scale=1e+01 
+Type: EXEC 
++ Fold06.Rep1: degree=3, scale=1e+01 
+- Fold06.Rep1: degree=3, scale=1e+01 
+Type: EXEC 
++ Fold06.Rep1: degree=1, scale=1e+02 
+- Fold06.Rep1: degree=1, scale=1e+02 
+Type: EXEC 
++ Fold06.Rep1: degree=2, scale=1e+02 
+model fit failed for Fold06.Rep1: degree=2, scale=1e+02 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold06.Rep1: degree=2, scale=1e+02 
+Type: EXEC 
++ Fold06.Rep1: degree=3, scale=1e+02 
+model fit failed for Fold06.Rep1: degree=3, scale=1e+02 Error in if (err < tol) break : missing value where TRUE/FALSE needed
+ 
+- Fold06.Rep1: degree=3, scale=1e+02 
+Type: EXEC 
++ Fold06.Rep1: degree=1, scale=1e+03 

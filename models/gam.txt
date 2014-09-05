@@ -1,0 +1,49 @@
+Time difference of 1.464063 hours
+[1] "==============="
+Generalized Additive Model using Splines 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 721, 719, 720, 720, 720, 720, ... 
+
+Resampling results across tuning parameters:
+
+  select  Accuracy  Kappa   Accuracy SD  Kappa SD
+  FALSE   0.207     -0.584  0.0326       0.0651  
+   TRUE   0.194     -0.611  0.0411       0.0809  
+
+Tuning parameter 'method' was held constant at a value of GCV.Cp
+Kappa was used to select the optimal model using  the largest value.
+The final values used for the model were select = FALSE and method = GCV.Cp. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 21 89
+         1 77 13
+                                          
+               Accuracy : 0.17            
+                 95% CI : (0.1207, 0.2294)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : 1.0000          
+                                          
+                  Kappa : -0.6567         
+ Mcnemar's Test P-Value : 0.3932          
+                                          
+            Sensitivity : 0.2143          
+            Specificity : 0.1275          
+         Pos Pred Value : 0.1909          
+         Neg Pred Value : 0.1444          
+             Prevalence : 0.4900          
+         Detection Rate : 0.1050          
+   Detection Prevalence : 0.5500          
+      Balanced Accuracy : 0.1709          
+                                          
+       'Positive' Class : 0               
+                                          
