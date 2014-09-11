@@ -1,0 +1,46 @@
+Time difference of 1.012804 mins
+[1] "==============="
+Generalized Linear Model with Stepwise Feature Selection 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 721, 720, 720, 720, 720, 720, ... 
+
+Resampling results
+
+  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.825     0.65   0.0414       0.0825  
+
+ 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 80 21
+         1 18 81
+                                          
+               Accuracy : 0.805           
+                 95% CI : (0.7432, 0.8575)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.6101          
+ Mcnemar's Test P-Value : 0.7488          
+                                          
+            Sensitivity : 0.8163          
+            Specificity : 0.7941          
+         Pos Pred Value : 0.7921          
+         Neg Pred Value : 0.8182          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4000          
+   Detection Prevalence : 0.5050          
+      Balanced Accuracy : 0.8052          
+                                          
+       'Positive' Class : 0               
+                                          

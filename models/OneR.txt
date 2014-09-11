@@ -1,4 +1,4 @@
-Time difference of 4.630841 secs
+Time difference of 4.913725 secs
 [1] "==============="
 Single Rule Classification 
 
@@ -7,14 +7,14 @@ Single Rule Classification
   2 classes: '0', '1' 
 
 No pre-processing
-Resampling: Cross-Validated (10 fold, repeated 2 times) 
+Resampling: Cross-Validated (2 fold, repeated 2 times) 
 
-Summary of sample sizes: 720, 721, 720, 720, 719, 720, ... 
+Summary of sample sizes: 400, 400, 400, 400 
 
 Resampling results
 
   Accuracy  Kappa  Accuracy SD  Kappa SD
-  0.71      0.421  0.045        0.0895  
+  0.657     0.313  0.0277       0.0569  
 
  
 [1] "==============="
@@ -22,25 +22,25 @@ Confusion Matrix and Statistics
 
           Reference
 Prediction  0  1
-         0 76 34
-         1 22 68
-                                         
-               Accuracy : 0.72           
-                 95% CI : (0.6523, 0.781)
-    No Information Rate : 0.51           
-    P-Value [Acc > NIR] : 1.15e-09       
-                                         
-                  Kappa : 0.4411         
- Mcnemar's Test P-Value : 0.1416         
-                                         
-            Sensitivity : 0.7755         
-            Specificity : 0.6667         
-         Pos Pred Value : 0.6909         
-         Neg Pred Value : 0.7556         
-             Prevalence : 0.4900         
-         Detection Rate : 0.3800         
-   Detection Prevalence : 0.5500         
-      Balanced Accuracy : 0.7211         
-                                         
-       'Positive' Class : 0              
-                                         
+         0 80 31
+         1 18 71
+                                          
+               Accuracy : 0.755           
+                 95% CI : (0.6894, 0.8129)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : 1.033e-12       
+                                          
+                  Kappa : 0.5111          
+ Mcnemar's Test P-Value : 0.08648         
+                                          
+            Sensitivity : 0.8163          
+            Specificity : 0.6961          
+         Pos Pred Value : 0.7207          
+         Neg Pred Value : 0.7978          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4000          
+   Detection Prevalence : 0.5550          
+      Balanced Accuracy : 0.7562          
+                                          
+       'Positive' Class : 0               
+                                          

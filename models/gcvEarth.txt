@@ -1,0 +1,47 @@
+Time difference of 2.342476 secs
+[1] "==============="
+Multivariate Adaptive Regression Splines 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 720, 721, 719, 721, 719, ... 
+
+Resampling results
+
+  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.811     0.621  0.0455       0.0911  
+
+Tuning parameter 'degree' was held constant at a value of 1
+ 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 81 23
+         1 17 79
+                                          
+               Accuracy : 0.8             
+                 95% CI : (0.7378, 0.8531)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.6003          
+ Mcnemar's Test P-Value : 0.4292          
+                                          
+            Sensitivity : 0.8265          
+            Specificity : 0.7745          
+         Pos Pred Value : 0.7788          
+         Neg Pred Value : 0.8229          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4050          
+   Detection Prevalence : 0.5200          
+      Balanced Accuracy : 0.8005          
+                                          
+       'Positive' Class : 0               
+                                          

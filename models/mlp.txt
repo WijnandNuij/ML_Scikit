@@ -1,0 +1,58 @@
+Time difference of 29.94801 secs
+[1] "==============="
+Multi-Layer Perceptron 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (2 fold, repeated 2 times) 
+
+Summary of sample sizes: 400, 400, 400, 400 
+
+Resampling results across tuning parameters:
+
+  size  Accuracy  Kappa  Accuracy SD  Kappa SD
+   1    0.783     0.566  0.0101       0.0196  
+   3    0.769     0.538  0.0329       0.0664  
+   5    0.784     0.567  0.0156       0.0318  
+   7    0.784     0.567  0.0120       0.0236  
+   9    0.777     0.554  0.0142       0.0289  
+  11    0.784     0.569  0.0200       0.0402  
+  13    0.779     0.559  0.0227       0.0455  
+  15    0.796     0.593  0.0113       0.0226  
+  17    0.775     0.550  0.0256       0.0507  
+  19    0.794     0.589  0.0120       0.0239  
+  21    0.799     0.597  0.0133       0.0262  
+  23    0.802     0.605  0.0124       0.0250  
+
+Kappa was used to select the optimal model using  the largest value.
+The final value used for the model was size = 23. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 82 21
+         1 16 81
+                                          
+               Accuracy : 0.815           
+                 95% CI : (0.7541, 0.8663)
+    No Information Rate : 0.51            
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.6302          
+ Mcnemar's Test P-Value : 0.5108          
+                                          
+            Sensitivity : 0.8367          
+            Specificity : 0.7941          
+         Pos Pred Value : 0.7961          
+         Neg Pred Value : 0.8351          
+             Prevalence : 0.4900          
+         Detection Rate : 0.4100          
+   Detection Prevalence : 0.5150          
+      Balanced Accuracy : 0.8154          
+                                          
+       'Positive' Class : 0               
+                                          

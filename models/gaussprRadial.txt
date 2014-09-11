@@ -1,0 +1,47 @@
+Time difference of 33.10819 secs
+[1] "==============="
+Gaussian Process with Radial Basis Function Kernel 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 720, 720, 720, 721, 720, ... 
+
+Resampling results
+
+  Accuracy  Kappa  Accuracy SD  Kappa SD
+  0.842     0.685  0.0389       0.0779  
+
+Tuning parameter 'sigma' was held constant at a value of 0.01367259
+ 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 81 18
+         1 17 84
+                                         
+               Accuracy : 0.825          
+                 95% CI : (0.7651, 0.875)
+    No Information Rate : 0.51           
+    P-Value [Acc > NIR] : <2e-16         
+                                         
+                  Kappa : 0.6499         
+ Mcnemar's Test P-Value : 1              
+                                         
+            Sensitivity : 0.8265         
+            Specificity : 0.8235         
+         Pos Pred Value : 0.8182         
+         Neg Pred Value : 0.8317         
+             Prevalence : 0.4900         
+         Detection Rate : 0.4050         
+   Detection Prevalence : 0.4950         
+      Balanced Accuracy : 0.8250         
+                                         
+       'Positive' Class : 0              
+                                         

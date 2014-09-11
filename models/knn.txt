@@ -1,0 +1,58 @@
+Time difference of 6.24806 secs
+[1] "==============="
+k-Nearest Neighbors 
+
+800 samples
+ 40 predictor
+  2 classes: '0', '1' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold, repeated 2 times) 
+
+Summary of sample sizes: 720, 720, 720, 720, 721, 720, ... 
+
+Resampling results across tuning parameters:
+
+  k   Accuracy  Kappa  Accuracy SD  Kappa SD
+   5  0.797     0.594  0.0415       0.0835  
+   7  0.805     0.609  0.0501       0.1009  
+   9  0.811     0.621  0.0424       0.0852  
+  11  0.824     0.647  0.0428       0.0860  
+  13  0.828     0.655  0.0456       0.0916  
+  15  0.837     0.674  0.0376       0.0757  
+  17  0.834     0.668  0.0341       0.0686  
+  19  0.842     0.684  0.0414       0.0835  
+  21  0.841     0.681  0.0389       0.0783  
+  23  0.838     0.675  0.0419       0.0843  
+  25  0.837     0.673  0.0418       0.0842  
+  27  0.834     0.666  0.0376       0.0759  
+
+Kappa was used to select the optimal model using  the largest value.
+The final value used for the model was k = 19. 
+[1] "==============="
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  0  1
+         0 81  8
+         1 17 94
+                                         
+               Accuracy : 0.875          
+                 95% CI : (0.821, 0.9174)
+    No Information Rate : 0.51           
+    P-Value [Acc > NIR] : <2e-16         
+                                         
+                  Kappa : 0.7494         
+ Mcnemar's Test P-Value : 0.1096         
+                                         
+            Sensitivity : 0.8265         
+            Specificity : 0.9216         
+         Pos Pred Value : 0.9101         
+         Neg Pred Value : 0.8468         
+             Prevalence : 0.4900         
+         Detection Rate : 0.4050         
+   Detection Prevalence : 0.4450         
+      Balanced Accuracy : 0.8740         
+                                         
+       'Positive' Class : 0              
+                                         
